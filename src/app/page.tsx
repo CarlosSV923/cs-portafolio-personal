@@ -1,13 +1,28 @@
-import { Button } from "@nextui-org/button";
+import NavbarPort from "@/components/Navbar";
 
 export default function Home() {
   return (
     <div>
-      Hola mundo
-
-      <div>
-        <Button color="primary">Click me</Button>
+      <NavbarPort />
+      <div
+        style={{
+          height: "100vh",
+          backgroundColor: "black",
+        }}
+        className=""
+      >
       </div>
+      <div
+        style={{
+          height: "100vh",
+        
+        }}
+      >
+        HOLAAAAAAAAAAAAAAAAAAA
+        HOLAAAAAAAAAAAAAAAAAAA
+        HOLAAAAAAAAAAAAAAAAAAA
+      </div>
+      
     </div>
   );
 }
