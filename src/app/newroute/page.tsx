@@ -1,9 +1,3 @@
-import React from 'react'
-
-export const Home = () => {
-  return (
-    <div>Hola</div>
-  )
+export default function NewRoute() {
+  return <div>Hola</div>;
 }
-
-export default Home
