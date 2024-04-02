@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 
-import { Providers } from "./providers";
+import { NextUIGlobalProvider } from "./nextUI.global.provider";
+import { PortafolioProvider } from "../contexts/portafolio.context";
 
 import "./globals.css";
 
@@ -19,8 +20,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className} >
-        <Providers>{children}</Providers>
+      <body className={inter.className}>
+        <NextUIGlobalProvider>
+          <PortafolioProvider>{children}</PortafolioProvider>
+        </NextUIGlobalProvider>
       </body>
     </html>
   );

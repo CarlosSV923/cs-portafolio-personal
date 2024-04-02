@@ -3,7 +3,7 @@
 import { NextUIProvider } from "@nextui-org/react";
 import { useRouter } from "next/navigation";
 
-export function Providers({
+export function NextUIGlobalProvider({
   children,
 }: {
   readonly children: React.ReactNode;

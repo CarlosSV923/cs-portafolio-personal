@@ -1,9 +1,9 @@
-import NavbarPort from "@/components/Navbar";
+import NavBarPort from "@/components/NavBar/NavBarNextUI";
 
 export default function Home() {
   return (
     <div>
-      <NavbarPort />
+      <NavBarPort />
       <div
         style={{
           height: "100vh",
