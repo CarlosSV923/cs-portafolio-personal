@@ -1,9 +1,11 @@
+import GeneralSection from "@/components/GeneralSection/GeneralSection";
 import NavBarPort from "@/components/NavBar/NavBarNextUI";
 
 export default function Home() {
   return (
     <div>
       <NavBarPort />
+      <GeneralSection />
       <div
         style={{
           height: "100vh",

@@ -27,11 +27,12 @@ const NavBarNextUI = () => {
       onMenuOpenChange={setIsMenuOpen}
       isMenuOpen={isMenuOpen}
       maxWidth="xl"
+      isBlurred={false}
     >
       <NavbarContent justify="start">
         <NavbarMenuToggle
           aria-label={isMenuOpen ? "Close menu" : "Open menu"}
-          className="sm:hidden text-white"
+          className="lg:hidden text-white"
         />
         <NavbarBrand className="gap-4">
           <Avatar size="sm" src="/logo_brand.jpg" />
@@ -49,7 +50,7 @@ const NavBarNextUI = () => {
           </div>
         </NavbarBrand>
       </NavbarContent>
-      <NavbarContent className="hidden sm:flex gap-4" justify="end">
+      <NavbarContent className="hidden lg:flex gap-4" justify="end">
         {order.map(
           (item, index) =>
             translations[item as keyof typeof translations] &&
