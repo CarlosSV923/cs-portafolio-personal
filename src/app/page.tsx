@@ -9,7 +9,7 @@ export default function Home() {
       <div
         style={{
           height: "100vh",
-          backgroundColor: "black",
+          backgroundColor: "red",
         }}
         className=""
       >

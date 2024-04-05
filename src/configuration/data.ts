@@ -15,8 +15,8 @@ export const data = [
                 "email": "",
                 "phone": "",
                 "address": "",
-                "github": "",
-                "linkedin": "",
+                "github": "https://github.com/CarlosSV923",
+                "linkedin": "https://www.linkedin.com/in/carlos-sesme-vera-342769172/",
             },
             "about": {
                 "description": "",

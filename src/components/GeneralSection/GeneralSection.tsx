@@ -1,9 +1,12 @@
 "use client";
-import { Avatar, Image } from "@nextui-org/react";
+import { useConfig } from "@/contexts/portafolio.context";
+import { Avatar, Image, Chip, Link, Button } from "@nextui-org/react";
 import NextImage from "next/image";
 import { useEffect, useState } from "react";
 
 const GeneralSection = () => {
+  const { data, translations } = useConfig()!;
+
   const [screenSize, setScreenSize] = useState<{
     width: number;
     height: number;
@@ -30,7 +33,10 @@ const GeneralSection = () => {
   }, []);
 
   return (
-    <div className="h-full lg:h-screen flex items-center justify-center pt-12 sm:pt-24 lg:pt-0">
+    <div
+      id="home"
+      className="relative h-full xl:h-screen flex items-center justify-center"
+    >
       <div className="absolute inset-0 z-10 overflow-hidden">
         <Image
           as={NextImage}
@@ -40,24 +46,75 @@ const GeneralSection = () => {
           height={screenSize.height}
           radius="none"
           loading="eager"
-          className="object-cover h-full w-full"
+          className="object-cover opacity-65"
         />
       </div>
-      <div>
-        <div className="absolute inset-0 bg-black opacity-65 z-20"></div>
-      </div>
-      <div className="z-20 flex items-center justify-center">
-        <div className="flex flex-col items-center text-white gap-1 lg:gap-4">
+      <div className="absolute inset-0 bg-black opacity-65 z-20"></div>
+      <div className="z-30 py-14 sm:py-26 md:py-32 lg:py-38 xl:py-0">
+        <div className="flex flex-row-reverse xl:flex-col items-center justify-center text-white gap-3 sm:gap-4 md:gap-5 lg:gap-6">
           <Avatar
             src="/photo_avatar.jpg"
-            className="h-20 w-20 sm:h-40 sm:w-40 lg:h-64 lg:w-64"
+            className="h-20 w-20 sm:h-32 sm:w-32 md:h-40 md:w-40 lg:h-52 lg:w-52 xl:h-64 xl:w-64"
           />
-          <h1 className="text-xl lg:text-4xl font-bold text-center">
-            {"Hi, I'm John Doe"}
-          </h1>
-          <p className="text-base md:text-lg text-center">
-            {"I'm a Software Engineer"}
-          </p>
+          <div className="flex flex-col gap-2 sm:gap-3 md:gap-4 lg:gap-5 xl:gap-6">
+            <h1 className="text-lg sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl text-cyan-400 font-bold text-center">
+              {data.general?.firstName} {data.general?.firstLastName}
+            </h1>
+            <p className="text-sm sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl text-center">
+              {data.general?.profession}
+            </p>
+          </div>
+        </div>
+      </div>
+      <div className="flex justify-between w-full p-2 md:p-4 lg:p-6 xl:p-8 z-20 absolute bottom-0">
+        <div className="flex gap-4 ">
+          <Link
+            target="_blank"
+            href={data.contact?.github}
+            className="flex gap-1 justify-center items-center border border-cyan-400 rounded-lg p-1 xl:p-1.5"
+          >
+            <Image
+              src="/icon_github.png"
+              alt="Brand Logo"
+              width={23}
+              height={23}
+              loading="eager"
+              radius="none"
+            />
+            <p className="text-cyan-400 hidden xl:flex">Github</p>
+          </Link>
+          <Link
+            target="_blank"
+            href={data.contact?.linkedin}
+            className="flex gap-1 justify-center items-center border border-cyan-400 rounded-lg p-1 xl:p-1.5"
+          >
+            <Image
+              src="/icon_linkedin.png"
+              alt="Brand Logo"
+              width={23}
+              height={23}
+              radius="none"
+              loading="eager"
+            />
+            <p className="text-cyan-400 hidden xl:flex">LinkedIn</p>
+          </Link>
+        </div>
+        <div>
+          <Link
+            href={`#${translations.contact}`}
+
+            className="flex gap-1 justify-center items-center border border-cyan-400 rounded-lg p-1 xl:p-1.5"
+          >
+            <Image
+              src="/icon_arrow-down.png"
+              alt="Brand Logo"
+              width={23}
+              height={23}
+              radius="none"
+              loading="eager"
+            />
+            <p className="text-cyan-400 hidden xl:flex">Bajar</p>
+          </Link>
         </div>
       </div>
     </div>

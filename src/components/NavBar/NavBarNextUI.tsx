@@ -32,25 +32,29 @@ const NavBarNextUI = () => {
       <NavbarContent justify="start">
         <NavbarMenuToggle
           aria-label={isMenuOpen ? "Close menu" : "Open menu"}
-          className="lg:hidden text-white"
+          className="xl:hidden text-white"
         />
-        <NavbarBrand className="gap-4">
-          <Avatar size="sm" src="/logo_brand.jpg" />
-          <div className="flex">
-            {data.general.textBrand?.split("").map((item, index) => (
-              <p
-                key={`${index}-${item}-navbar-brand`}
-                className={`font-bold ${
-                  index % 2 === 0 ? "text-cyan-400" : "text-white"
-                }`}
-              >
-                {item}
-              </p>
-            ))}
-          </div>
+        <NavbarBrand>
+          <Link href="#home" onClick={() => setSectionSelected("home")}>
+            <div className="flex gap-4 items-center justify-center ">
+              <Avatar size="sm" src="/logo_brand.jpg" />
+              <div className="flex">
+                {data.general.textBrand?.split("").map((item, index) => (
+                  <p
+                    key={`${index}-${item}-navbar-brand`}
+                    className={`font-bold ${
+                      index % 2 === 0 ? "text-cyan-400" : "text-white"
+                    }`}
+                  >
+                    {item}
+                  </p>
+                ))}
+              </div>
+            </div>
+          </Link>
         </NavbarBrand>
       </NavbarContent>
-      <NavbarContent className="hidden lg:flex gap-4" justify="end">
+      <NavbarContent className="hidden xl:flex gap-4" justify="end">
         {order.map(
           (item, index) =>
             translations[item as keyof typeof translations] &&
