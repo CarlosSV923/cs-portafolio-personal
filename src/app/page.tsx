@@ -1,19 +1,13 @@
+import AboutSection from "@/components/AboutSection/AboutSection";
 import GeneralSection from "@/components/GeneralSection/GeneralSection";
-import NavBarPort from "@/components/NavBar/NavBarNextUI";
+import NavBar from "@/components/NavBar/NavBar";
 
 export default function Home() {
   return (
     <div>
-      <NavBarPort />
+      <NavBar />
       <GeneralSection />
-      <div
-        style={{
-          height: "100vh",
-          backgroundColor: "red",
-        }}
-        className=""
-      >
-      </div>
+      <AboutSection/>
       <div
         style={{
           height: "100vh",

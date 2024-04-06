@@ -14,7 +14,7 @@ import {
 import { useConfig } from "@/contexts/portafolio.context";
 import { order } from "@/configuration/order";
 
-const NavBarNextUI = () => {
+const NavBar = () => {
   const [isMenuOpen, setIsMenuOpen] = React.useState<boolean>(false);
 
   const { data, translations, sectionSelected, setSectionSelected } =
@@ -22,24 +22,23 @@ const NavBarNextUI = () => {
 
   return (
     <Navbar
-      className="bg-transparent fixed"
-      shouldHideOnScroll
+      className={`bg-transparent absolute`}
       onMenuOpenChange={setIsMenuOpen}
       isMenuOpen={isMenuOpen}
       maxWidth="xl"
       isBlurred={false}
     >
       <NavbarContent justify="start">
-        <NavbarMenuToggle
+        {/* <NavbarMenuToggle
           aria-label={isMenuOpen ? "Close menu" : "Open menu"}
           className="xl:hidden text-white"
-        />
+        /> */}
         <NavbarBrand>
           <Link href="#home" onClick={() => setSectionSelected("home")}>
             <div className="flex gap-4 items-center justify-center ">
-              <Avatar size="sm" src="/logo_brand.jpg" />
+              <Avatar size="sm" src={data.general?.navbarPicture} />
               <div className="flex">
-                {data.general.textBrand?.split("").map((item, index) => (
+                {data.general.navbarText?.split("").map((item, index) => (
                   <p
                     key={`${index}-${item}-navbar-brand`}
                     className={`font-bold ${
@@ -62,9 +61,9 @@ const NavBarNextUI = () => {
               <NavbarItem key={`${index}-${item}-navbar-item`}>
                 <Link
                   onClick={() => setSectionSelected(item)}
-                  className={
+                  className={` ${
                     sectionSelected === item ? "text-cyan-400" : "text-white"
-                  }
+                  }`}
                   href={`#${item}`}
                 >
                   {translations[item as keyof typeof translations]}
@@ -73,7 +72,7 @@ const NavBarNextUI = () => {
             )
         )}
       </NavbarContent>
-      <NavbarMenu className="bg-transparent gap-4">
+      {/* <NavbarMenu className="bg-black opacity-65 gap-4">
         {order.map(
           (item, index) =>
             translations[item as keyof typeof translations] &&
@@ -92,9 +91,9 @@ const NavBarNextUI = () => {
               </NavbarMenuItem>
             )
         )}
-      </NavbarMenu>
+      </NavbarMenu> */}
     </Navbar>
   );
 };
 
-export default NavBarNextUI;
+export default NavBar;
