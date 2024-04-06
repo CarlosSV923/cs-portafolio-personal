@@ -13,7 +13,7 @@ export interface DataModel {
 export interface About {
     description: string;
     urlCurriculum: string;
-    experence: string;
+    aboutPicture: string;
 }
 
 export interface Contact {
@@ -38,9 +38,11 @@ export interface General {
     secondName: string;
     firstLastName: string;
     secondLastName: string;
-    headerImg: string;
+    navbarPicture: string;
+    avatarPicture: string;
+    backgroundPicture: string;
     profession: string;
-    textBrand: string;
+    navbarText: string;
 }
 
 export interface Skills {
