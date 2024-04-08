@@ -10,6 +10,11 @@ export interface TranslationModel {
     downloadCV: string;
     experience: string;
     education: string;
+    intitution: string;
+    location: string;
+    degreeUrl: string;
+    mode: string;
+    achievements: string;
     technologies: string;
     skills: string;
     projects: string;

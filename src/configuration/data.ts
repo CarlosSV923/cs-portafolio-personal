@@ -27,11 +27,37 @@ export const data = [
             },
             "education": [
                 {
-                    "title": "",
-                    "institution": "",
-                    "dateFrom": "",
-                    "dateTo": "",
-                    "description": ""
+                    "title": "Título de Primaria",
+                    "degree": "Básica",
+                    "institution": "Escuela Fiscal Dr. Carlos Cevallos Menéndez",
+                    "dateFrom": "2003",
+                    "dateTo": "2009",
+                    "location": "Guayaquil, Ecuador",
+                    "mode": "Presencial",
+                    // "url": "https://www.udemy.com/certificate/UC-570e3d7c-cf96-4263-81d9-a907bf2509f9/"
+                }, {
+                    "title": "Título de Secundaria",
+                    "degree": "Bachiller General en Ciencias",
+                    "institution": "Colegio Experimental Vicente Rocafuerte",
+                    "dateFrom": "2009",
+                    "dateTo": "2015",
+                    "location": "Guayaquil, Ecuador",
+                    "mode": "Presencial",
+                    // "url": "https://www.udemy.com/certificate/UC-570e3d7c-cf96-4263-81d9-a907bf2509f9/",
+                    // "achievements": [
+                    //     "Logro 1",
+                    //     "Logro 2",
+                    //     "Logro 3"
+                    // ]
+                }, {
+                    "title": "Título Universitario",
+                    "degree": "Ing. en Ciencias Computacionales",
+                    "institution": "Escuela Superior Politécnica del Litoral - ESPOL",
+                    "dateFrom": "2015",
+                    "dateTo": "2021",
+                    "location": "Guayaquil, Ecuador",
+                    "mode": "Presencial",
+                    // "achievements": "Logrooooooooooooooooooooooooooooooo"
                 }
             ],
             "experience": [
