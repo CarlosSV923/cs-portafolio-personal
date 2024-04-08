@@ -43,6 +43,7 @@ export const translations = [
             description: "Description",
             downloadCV: "Download CV",
             experience: "Experience",
+            intitution: "Institution",
             education: "Education",
             location: "Location",
             mode: "Mode",
