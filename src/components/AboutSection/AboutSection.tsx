@@ -10,7 +10,7 @@ export const AboutSection = () => {
   return (
     <div 
     id="about"
-    className="bg-zinc-900 h-full xl:h-screen flex flex-col xl:flex-row gap-8 xl:gap-12 items-center justify-center p-8 xl:p-0">
+    className="bg-zinc-800 h-full xl:h-screen flex flex-col xl:flex-row gap-8 xl:gap-12 items-center justify-center p-8 xl:p-0">
       <div
         className="border-t-5 border-l-5 border-cyan-400 rounded-md overflow-hidden p-4"
       >
@@ -21,6 +21,7 @@ export const AboutSection = () => {
           width={400}
           height={1000}
           loading="eager"
+          className="w-full h-auto"
         />
       </div>
 
