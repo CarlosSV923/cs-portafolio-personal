@@ -32,7 +32,7 @@ export const CardItemEducation = ({
           <div className="flex justify-center item-center">
             <Image
               as={NextImage}
-              src={education.logo ?? "/icons/icon_graduation-cap.png"}
+              src={education.logo || "/icons/icon_graduation-cap.png"}
               fallbackSrc="/icons/icon_graduation-cap.png"
               alt={education.degree}
               width={45}
@@ -98,7 +98,8 @@ export const CardItemEducation = ({
               {translations.degreeUrl}
             </Link>
           )}
-          {Boolean(education.achievements?.length) && (
+          {(Boolean(education.achievements?.length) ||
+            Boolean(education.attitudes?.length)) && (
             <>
               <Button
                 size="sm"
@@ -106,13 +107,19 @@ export const CardItemEducation = ({
                 className="rounded-2xl text-white text-md border-white hover:border-cyan-400 hover:bg-cyan-400 hover:text-black"
                 onClick={onOpen}
               >
-                {translations.achievements}
+                {education.achievements && translations.achievements}
+                {education.achievements && education.attitudes ? " y " : " "}
+                {education.attitudes && translations.attitudes}
               </Button>
 
               <ModalAchievements
                 isOpen={isOpen}
                 onOpenChange={onOpenChange}
-                achievements={education.achievements!}
+                achievements={education.achievements}
+                attitudes={education.attitudes}
+                style={{
+                  backgroundColor: "#1A1A2E",
+                }}
               />
             </>
           )}

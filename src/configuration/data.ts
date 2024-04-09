@@ -34,7 +34,7 @@ export const data = [
                     "dateTo": "2009",
                     "location": "Guayaquil, Ecuador",
                     "mode": "Presencial",
-                    // "url": "https://www.udemy.com/certificate/UC-570e3d7c-cf96-4263-81d9-a907bf2509f9/"
+                    "url": "https://www.udemy.com/certificate/UC-570e3d7c-cf96-4263-81d9-a907bf2509f9/"
                 }, {
                     "title": "Título de Secundaria",
                     "degree": "Bachiller General en Ciencias",
@@ -43,12 +43,26 @@ export const data = [
                     "dateTo": "2015",
                     "location": "Guayaquil, Ecuador",
                     "mode": "Presencial",
-                    // "url": "https://www.udemy.com/certificate/UC-570e3d7c-cf96-4263-81d9-a907bf2509f9/",
-                    // "achievements": [
-                    //     "Logro 1",
-                    //     "Logro 2",
-                    //     "Logro 3"
-                    // ]
+                    "url": "https://www.udemy.com/certificate/UC-570e3d7c-cf96-4263-81d9-a907bf2509f9/",
+                    "achievements": [
+                        "Logro 1",
+                        "Logro 2",
+                        "Logro 3"
+                    ],
+                    attitudes: [
+                        {
+                            "name": "Mantenimiento informático",
+                            "logo": ""
+                        },
+                        {
+                            "name": "Mantenimiento y reparaciones",
+                            "logo": ""
+                        },
+                        {
+                            "name": "Hardware",
+                            "logo": ""
+                        }
+                    ],
                 }, {
                     "title": "Título Universitario",
                     "degree": "Ing. en Ciencias Computacionales",
@@ -57,7 +71,7 @@ export const data = [
                     "dateTo": "2021",
                     "location": "Guayaquil, Ecuador",
                     "mode": "Presencial",
-                    // "achievements": "Logrooooooooooooooooooooooooooooooo"
+                    "achievements": "Logrooooooooooooooooooooooooooooooo"
                 }
             ],
             "experience": [
@@ -72,9 +86,18 @@ export const data = [
                         "Supervisión el acceso a los recursos tecnológicos de la institución.",
                     ],
                     attitudes: [
-                        "Mantenimiento informático.",
-                        "Mantenimiento y reparaciones",
-                        "Hardware",
+                        {
+                            "name": "Mantenimiento informático",
+                            "logo": ""
+                        },
+                        {
+                            "name": "Mantenimiento y reparaciones",
+                            "logo": ""
+                        },
+                        {
+                            "name": "Hardware",
+                            "logo": ""
+                        }
                     ],
                     mode: "Presencial",
                     location: "Guayaquil, Ecuador",
@@ -92,12 +115,34 @@ export const data = [
                         "Desarrollo de aplicación de escritorio para procesamiento de documentos Excel.",
                     ],
                     attitudes: [
-                        "Java",
-                        "AngularJS",
-                        "PostgreSQL",
-                        "ASP.NET",
-                        "SQL Server",
-                        ".NET Core"
+                        {
+                            "name": "C#",
+                            "logo": ""
+                        },
+                        {
+                            "name": "Java",
+                            "logo": ""
+                        },
+                        {
+                            "name": "AngularJS",
+                            "logo": ""
+                        },
+                        {
+                            "name": "PostgreSQL",
+                            "logo": ""
+                        },
+                        {
+                            "name": "ASP.NET",
+                            "logo": ""
+                        },
+                        {
+                            "name": "SQL Server",
+                            "logo": ""
+                        },
+                        {
+                            "name": ".NET Core",
+                            "logo": ""
+                        },
                     ],
                     mode: "Presencial",
                     location: "Guayaquil, Ecuador",
@@ -114,8 +159,15 @@ export const data = [
                         "Proporcionar retroalimentación a los estudiantes.",
                     ],
                     attitudes: [
-                        "SQL",
-                        "Docencia"
+                        {
+                            "name": "MySQL",
+                            "logo": ""
+                        },
+                        {
+                            "name": "Docencia",
+                            "logo": ""
+                        },
+                        
                     ],
                     mode: "Presencial",
                     location: "Guayaquil, Ecuador",
@@ -131,11 +183,26 @@ export const data = [
                         "Gestión de la base de datos MySQL utilizada por la aplicación web.",
                     ],
                     attitudes: [
-                        "Python",
-                        "Django",
-                        "MySQL",
-                        "Javascript",
-                        "HTML",
+                        {
+                            "name": "Python",
+                            "logo": ""
+                        },
+                        {
+                            "name": "Django",
+                            "logo": ""
+                        },
+                        {
+                            "name": "MySQL",
+                            "logo": ""
+                        },
+                        {
+                            "name": "Javascript",
+                            "logo": ""
+                        },
+                        {
+                            "name": "HTML",
+                            "logo": ""
+                        }
                     ],
                     mode: "Remoto",
                     location: "Guayaquil, Ecuador",
@@ -154,17 +221,54 @@ export const data = [
                         "Implementación de servicios GraphQL en microservicios Node.js.",
                     ],
                     attitudes: [
-                        "Typescript",
-                        "Reactjs",
-                        "Nodejs",
-                        "NestJS",
-                        "MongoDB",
-                        "Kafka",
-                        "Docker",
-                        "C#",
-                        ".NET Core",
-                        "Azure Functions",
-                        "GraphQL"
+                        {
+                            "name": "Javascript",
+                            "logo": ""
+                        },
+                        {
+                            "name": "Typescript",
+                            "logo": ""
+                        },
+                        {
+                            "name": "Reactjs",
+                            "logo": ""
+                        },
+                        {
+                            "name": "Nodejs",
+                            "logo": ""
+                        },
+                        {
+                            "name": "NestJS",
+                            "logo": ""
+                        },
+                        {
+                            "name": "MongoDB",
+                            "logo": ""
+                        },
+                        {
+                            "name": "Kafka",
+                            "logo": ""
+                        },
+                        {
+                            "name": "Docker",
+                            "logo": ""
+                        },
+                        {
+                            "name": "C#",
+                            "logo": ""
+                        },
+                        {
+                            "name": ".NET Core",
+                            "logo": ""
+                        },
+                        {
+                            "name": "Azure Functions",
+                            "logo": ""
+                        },
+                        {
+                            "name": "GraphQL",
+                            "logo": ""
+                        },
                     ],
                     mode: "Remoto",
                     location: "Colombia",

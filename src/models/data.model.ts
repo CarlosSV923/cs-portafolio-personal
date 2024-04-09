@@ -28,7 +28,7 @@ export interface ExperienceModel {
     institution?: string;
     title?: string;
     degree?: string;
-    
+
     dateFrom: string;
     dateTo: string;
     achievements?: string | string[];
@@ -36,8 +36,8 @@ export interface ExperienceModel {
     url?: string;
     location?: string;
     mode?: string;
-    attitudes?: string | string[];
-    
+    attitudes?: Skills[];
+
     time?: string;
     company?: string;
     position?: string;
@@ -57,7 +57,8 @@ export interface General {
 
 export interface Skills {
     name: string;
-    description: string;
+    description?: string;
+    logo?: string;
 }
 
 export interface Project {

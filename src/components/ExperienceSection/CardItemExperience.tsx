@@ -27,7 +27,7 @@ export const CardItemExperience = ({
       <CardHeader className="flex item-center flex-col justify-center gap-2">
         <Image
           as={NextImage}
-          src={experience.logo ?? "/icons/icon_work.png"}
+          src={experience.logo || "/icons/icon_work.png"}
           fallbackSrc="/icons/icon_work.png"
           alt={experience.position} 
           width={45}
