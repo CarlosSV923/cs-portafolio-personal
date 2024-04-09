@@ -62,11 +62,113 @@ export const data = [
             ],
             "experience": [
                 {
-                    "title": "",
-                    "company": "",
-                    "dateFrom": "",
-                    "dateTo": "",
-                    "description": ""
+                    position: "Ayudante de Laboratorio de Computación",
+                    "company": "Escuela Superior Politécnica del Litoral - ESPOL",
+                    "dateFrom": "05/2018",
+                    "dateTo": "10/2018",
+                    "achievements": [
+                        "Ayuda en la administración de laboratorios de computación.",
+                        "Realización el mantenimiento básico de los equipos computacionales.",
+                        "Supervisión el acceso a los recursos tecnológicos de la institución.",
+                    ],
+                    attitudes: [
+                        "Mantenimiento informático.",
+                        "Mantenimiento y reparaciones",
+                        "Hardware",
+                    ],
+                    mode: "Presencial",
+                    location: "Guayaquil, Ecuador",
+                    time: "Contrato temporal",
+                },
+                {
+                    position: "Pasante de Desarrollo de Software",
+                    "company": "BlackBoxEc",
+                    "dateFrom": "06/2019",
+                    "dateTo": "12/2019",
+                    "achievements": [
+                        "Desarrollo Web de un sistema de control para registro de llegada de paquetes por Courier.",
+                        "Mejoras y correcciones en aplicaciones móviles.",
+                        "Mejoras y correcciones en aplicaciones web utilizando tecnologías ASP.NET",
+                        "Desarrollo de aplicación de escritorio para procesamiento de documentos Excel.",
+                    ],
+                    attitudes: [
+                        "Java",
+                        "AngularJS",
+                        "PostgreSQL",
+                        "ASP.NET",
+                        "SQL Server",
+                        ".NET Core"
+                    ],
+                    mode: "Presencial",
+                    location: "Guayaquil, Ecuador",
+                    time: "Contrato de prácticas",
+                },
+                {
+                    position: "Ayudante de Docencia en Base de Datos",
+                    "company": "Escuela Superior Politécnica del Litoral - ESPOL",
+                    "dateFrom": "05/2019",
+                    "dateTo": "10/2019",
+                    achievements: [
+                        "Revisión de talleres y tareas asignadas a los estudiantes.",
+                        "Impartir clases de ayuda y ejercicios prácticos.",
+                        "Proporcionar retroalimentación a los estudiantes.",
+                    ],
+                    attitudes: [
+                        "SQL",
+                        "Docencia"
+                    ],
+                    mode: "Presencial",
+                    location: "Guayaquil, Ecuador",
+                    time: "Contrato temporal",
+                },
+                {
+                    position: "Full Stack Developer",
+                    "company": "Contifico S.A.",
+                    "dateFrom": "06/2020",
+                    "dateTo": "09/2020",
+                    "achievements": [
+                        "Mantenimiento de aplicación web, corrigiendo errores y agregando nuevas funcionalidades.",
+                        "Gestión de la base de datos MySQL utilizada por la aplicación web.",
+                    ],
+                    attitudes: [
+                        "Python",
+                        "Django",
+                        "MySQL",
+                        "Javascript",
+                        "HTML",
+                    ],
+                    mode: "Remoto",
+                    location: "Guayaquil, Ecuador",
+                    time: "Jornada Completa",
+                },
+                {
+                    position: "Sr. Full Stack Developer",
+                    "company": "SIIGO S.A.",
+                    "dateFrom": "09/2020",
+                    "dateTo": "Actualidad",
+                    "achievements": [
+                        "Implementación de microservicios usando node.js y C#.",
+                        "Desarrollo web intuitivo usando Reactjs.",
+                        "Implementación de consumidores y productores Kafka en microservicios.",
+                        "Administración de bases de datos NoSQL utilizando MongoDB.",
+                        "Implementación de servicios GraphQL en microservicios Node.js.",
+                    ],
+                    attitudes: [
+                        "Typescript",
+                        "Reactjs",
+                        "Nodejs",
+                        "NestJS",
+                        "MongoDB",
+                        "Kafka",
+                        "Docker",
+                        "C#",
+                        ".NET Core",
+                        "Azure Functions",
+                        "GraphQL"
+                    ],
+                    mode: "Remoto",
+                    location: "Colombia",
+                    time: "Jornada Completa",
                 }
             ],
             "technologies": [

@@ -25,17 +25,22 @@ export interface Contact {
 }
 
 export interface ExperienceModel {
-    title?: string;
     institution?: string;
+    title?: string;
+    degree?: string;
+    
     dateFrom: string;
     dateTo: string;
     achievements?: string | string[];
-    company?: string;
+    logo?: string;
     url?: string;
-    degree?: string;
-    position?: string;
     location?: string;
     mode?: string;
+    attitudes?: string | string[];
+    
+    time?: string;
+    company?: string;
+    position?: string;
 }
 
 export interface General {

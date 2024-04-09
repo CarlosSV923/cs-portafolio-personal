@@ -23,9 +23,12 @@ export const EducationSection = () => {
         </div>
       </div>
 
-      <div className="flex justify-center flex-col xl:flex-row flex-wrap gap-8 xl:gap-20">
+      <div className="w-full flex justify-center flex-col xl:flex-row flex-wrap gap-8 xl:gap-20">
         {data.education?.map((education, index) => (
-          <CardItemEducation key={index} index={index} education={education} />
+          <CardItemEducation
+            key={`${education.title}-card-education-${index}`}
+            education={education}
+          />
         ))}
       </div>
     </div>
