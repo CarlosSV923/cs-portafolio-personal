@@ -12,7 +12,7 @@ export const EducationSection = () => {
         backgroundColor: "#1A1A2E",
       }}
       id="education"
-      className="h-full flex flex-col items-center justify-center p-8 xl:p-12 gap-8 xl:gap-20"
+      className="h-full flex flex-col items-center justify-center p-8 gap-8 xl:gap-16"
     >
       <div className="flex w-full justify-center items-center">
         <div className="flex flex-col">
@@ -23,7 +23,7 @@ export const EducationSection = () => {
         </div>
       </div>
 
-      <div className="w-full flex justify-center flex-col xl:flex-row flex-wrap gap-8 xl:gap-20">
+      <div className="w-full flex justify-center flex-col xl:flex-row flex-wrap gap-8 xl:gap-16">
         {data.education?.map((education, index) => (
           <CardItemEducation
             key={`${education.title}-card-education-${index}`}

@@ -5,12 +5,12 @@ import {
   CardHeader,
   CardBody,
   CardFooter,
-  Divider,
-  Link,
+  useDisclosure,
   Image,
   Button,
 } from "@nextui-org/react";
 import NextImage from "next/image";
+import { ModalAchievementsAttitudes } from "../Shared/ModalAchievementsActitudes/ModalAchievementsAttitudes";
 
 export const CardItemExperience = ({
   experience,
@@ -18,6 +18,8 @@ export const CardItemExperience = ({
   experience: ExperienceModel;
 }) => {
   const { translations } = useConfig()!;
+  const { isOpen, onOpen, onOpenChange } = useDisclosure();
+
   return (
     <Card
       shadow="sm"
@@ -29,17 +31,21 @@ export const CardItemExperience = ({
           as={NextImage}
           src={experience.logo || "/icons/icon_work.png"}
           fallbackSrc="/icons/icon_work.png"
-          alt={experience.position} 
+          alt={experience.position}
           width={45}
           height={45}
           loading="eager"
         />
-        <h3 className="text-white text-center text-md font-bold">{experience.position}</h3>
+        <h3 className="text-white text-center text-md font-bold">
+          {experience.position}
+        </h3>
       </CardHeader>
       <CardBody className="flex flex-col gap-2">
         <div className="flex flex-col justify-center item-center gap-2">
           {experience.company && (
-            <p className="text-white text-center text-md">{experience.company}</p>
+            <p className="text-white text-center text-md">
+              {experience.company}
+            </p>
           )}
           {experience.time && (
             <p className="text-white text-center text-md">{experience.time}</p>
@@ -74,10 +80,19 @@ export const CardItemExperience = ({
             size="sm"
             variant="bordered"
             className="rounded-2xl text-white text-md border-white hover:border-cyan-400 hover:bg-cyan-400 hover:text-black"
-            // onClick={onOpen}
+            onClick={onOpen}
           >
-            {translations.achievements}
+            {experience.achievements && translations.achievements}
+            {experience.achievements && experience.attitudes ? " y " : " "}
+            {experience.attitudes && translations.attitudes}
           </Button>
+          <ModalAchievementsAttitudes
+            isOpen={isOpen}
+            onOpenChange={onOpenChange}
+            achievements={experience.achievements}
+            attitudes={experience.attitudes}
+            className="bg-gray-800"
+          />
         </CardFooter>
       )}
     </Card>

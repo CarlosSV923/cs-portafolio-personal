@@ -18,6 +18,8 @@ export interface TranslationModel {
     attitudes: string;
     technologies: string;
     skills: string;
+    techSkills: string;
+    softSkills: string;
     projects: string;
     more: string;
     about: string;

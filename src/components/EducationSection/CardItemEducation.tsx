@@ -12,7 +12,7 @@ import {
   useDisclosure,
 } from "@nextui-org/react";
 import NextImage from "next/image";
-import { ModalAchievements } from "./ModalAchievements";
+import { ModalAchievementsAttitudes } from "../Shared/ModalAchievementsActitudes/ModalAchievementsAttitudes";
 
 export const CardItemEducation = ({
   education,
@@ -80,13 +80,11 @@ export const CardItemEducation = ({
           </div>
         )}
       </CardBody>
-      {(education.url || Boolean(education.achievements?.length)) && (
+      {(education.url ||
+        Boolean(education.achievements?.length) ||
+        Boolean(education.attitudes?.length)) && (
         <CardFooter
-          className={`flex ${
-            education.url && education.achievements?.length
-              ? "justify-between"
-              : "justify-end"
-          }`}
+          className={`flex flex-col md:flex-row justify-center md:justify-between gap-2`}
         >
           {education.url && (
             <Link
@@ -112,7 +110,7 @@ export const CardItemEducation = ({
                 {education.attitudes && translations.attitudes}
               </Button>
 
-              <ModalAchievements
+              <ModalAchievementsAttitudes
                 isOpen={isOpen}
                 onOpenChange={onOpenChange}
                 achievements={education.achievements}

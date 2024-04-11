@@ -4,8 +4,7 @@ export interface DataModel {
     about: About;
     education: ExperienceModel[];
     experience: ExperienceModel[];
-    technologies: Skills[];
-    skills: Skills[];
+    skills: Skills;
     projects: Project[];
     more: Skills[];
 }
@@ -36,11 +35,17 @@ export interface ExperienceModel {
     url?: string;
     location?: string;
     mode?: string;
-    attitudes?: Skills[];
+    attitudes?: Attitude[];
 
     time?: string;
     company?: string;
     position?: string;
+}
+
+export interface Attitude {
+    name: string;
+    logo?: string;
+    description?: string;
 }
 
 export interface General {
@@ -56,9 +61,13 @@ export interface General {
 }
 
 export interface Skills {
+    tech: SkillType[];
+    soft: SkillType[];
+}
+
+export interface SkillType {
     name: string;
-    description?: string;
-    logo?: string;
+    percentage: number;
 }
 
 export interface Project {

@@ -29,7 +29,7 @@ export const AboutSection = () => {
         <h1 className="text-white font-bold text-2xl xl:text-4xl">
           {translations.about}
         </h1>
-        <Divider className="mt-2 mb-5 xl:mb-8 bg-cyan-400 w-28 h-1" />
+        <Divider className="mt-2 mb-5 xl:mb-8 bg-cyan-400 w-16 xl:w-28 h-1" />
         <p className="text-white text-justify text-lg xl:text-xl">
           {data.about?.description}
         </p>

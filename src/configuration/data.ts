@@ -34,7 +34,6 @@ export const data = [
                     "dateTo": "2009",
                     "location": "Guayaquil, Ecuador",
                     "mode": "Presencial",
-                    "url": "https://www.udemy.com/certificate/UC-570e3d7c-cf96-4263-81d9-a907bf2509f9/"
                 }, {
                     "title": "Título de Secundaria",
                     "degree": "Bachiller General en Ciencias",
@@ -43,26 +42,6 @@ export const data = [
                     "dateTo": "2015",
                     "location": "Guayaquil, Ecuador",
                     "mode": "Presencial",
-                    "url": "https://www.udemy.com/certificate/UC-570e3d7c-cf96-4263-81d9-a907bf2509f9/",
-                    "achievements": [
-                        "Logro 1",
-                        "Logro 2",
-                        "Logro 3"
-                    ],
-                    attitudes: [
-                        {
-                            "name": "Mantenimiento informático",
-                            "logo": ""
-                        },
-                        {
-                            "name": "Mantenimiento y reparaciones",
-                            "logo": ""
-                        },
-                        {
-                            "name": "Hardware",
-                            "logo": ""
-                        }
-                    ],
                 }, {
                     "title": "Título Universitario",
                     "degree": "Ing. en Ciencias Computacionales",
@@ -71,7 +50,6 @@ export const data = [
                     "dateTo": "2021",
                     "location": "Guayaquil, Ecuador",
                     "mode": "Presencial",
-                    "achievements": "Logrooooooooooooooooooooooooooooooo"
                 }
             ],
             "experience": [
@@ -167,7 +145,7 @@ export const data = [
                             "name": "Docencia",
                             "logo": ""
                         },
-                        
+
                     ],
                     mode: "Presencial",
                     location: "Guayaquil, Ecuador",
@@ -275,18 +253,125 @@ export const data = [
                     time: "Jornada Completa",
                 }
             ],
-            "technologies": [
-                {
-                    "name": "",
-                    "description": ""
-                }
-            ],
-            "skills": [
-                {
-                    "name": "",
-                    "description": ""
-                }
-            ],
+            "skills": {
+                tech: [
+                    {
+                        "name": "Node.js",
+                        percentage: 75,
+                    },
+                    {
+                        name: "React.js",
+                        percentage: 70,
+                    },
+                    {
+                        name: "Javascript",
+                        percentage: 70,
+                    },
+                    {
+                        name: "Typescript",
+                        percentage: 70,
+                    },
+                    {
+                        name: "MongoDB",
+                        percentage: 60,
+                    },
+                    {
+                        name: "Docker",
+                        percentage: 60,
+                    },
+                    {
+                        name: "C#",
+                        percentage: 65,
+                    },
+                    {
+                        name: ".NET Core",
+                        percentage: 65,
+                    },
+                    {
+                        name: "Azure Functions",
+                        percentage: 70,
+                    },
+                    {
+                        name: "GraphQL",
+                        percentage: 65,
+                    },
+                    {
+                        name: "Python",
+                        percentage: 50,
+                    },
+                    {
+                        name: "Django",
+                        percentage: 50,
+                    },
+                    {
+                        name: "MySQL",
+                        percentage: 65,
+                    },
+                    {
+                        name: "CSS",
+                        percentage: 75,
+                    },
+                    {
+                        name: "AngularJS",
+                        percentage: 55,
+                    },
+                    {
+                        name: "PostgreSQL",
+                        percentage: 60,
+                    },
+                    {
+                        name: "ASP.NET",
+                        percentage: 65,
+                    },
+                    {
+                        name: "NestJS",
+                        percentage: 70,
+                    },
+                    {
+                        name: "Kafka",
+                        percentage: 60,
+                    },
+
+                ],
+                soft: [
+                    {
+                        name: "Ingles",
+                        percentage: 45,
+                    },
+                    {
+                        "name": "Trabajo en equipo",
+                        percentage: 80,
+                    },
+                    {
+                        name: "Comunicación",
+                        percentage: 75,
+                    },
+                    {
+                        name: "Responsabilidad",
+                        percentage: 85,
+                    },
+                    {
+                        name: "Proactividad",
+                        percentage: 80,
+                    },
+                    {
+                        name: "Adaptabilidad",
+                        percentage: 75,
+                    },
+                    {
+                        name: "Resolución de problemas",
+                        percentage: 85,
+                    },
+                    {
+                        name: "Creatividad",
+                        percentage: 70,
+                    },
+                    {
+                        name: "Empatía",
+                        percentage: 80,
+                    }
+                ]
+            },
             "projects": [
                 {
                     "name": "",
@@ -325,39 +410,358 @@ export const data = [
             },
             "about": {
                 "aboutPicture": "portafolio_pictures/about_picture.jpg",
-                "description": "",
+                "description": "Software Engineer with four years of professional experience, competent and passionate about technology. My solid academic background is complemented by ongoing learning of the latest technological trends. I have extensive experience in web development, system design, and project management. I possess outstanding problem-solving skills, proposing innovative, robust, and scalable solutions to technological challenges. My communication, teamwork, and responsibility skills enable me to collaborate effectively in dynamic and challenging work environments.",
                 "urlCurriculum": "files/cv.pdf",
             },
             "education": [
                 {
-                    "title": "",
-                    "institution": "",
-                    "dateFrom": "",
-                    "dateTo": "",
-                    "description": ""
+                    "title": "Primary School Title",
+                    "degree": "Basic",
+                    "institution": "Dr. Carlos Cevallos Menéndez Public School",
+                    "dateFrom": "2003",
+                    "dateTo": "2009",
+                    "location": "Guayaquil, Ecuador",
+                    "mode": "On-site"
+                },
+                {
+                    "title": "High School Title",
+                    "degree": "General Bachelor in Sciences",
+                    "institution": "Vicente Rocafuerte Experimental School",
+                    "dateFrom": "2009",
+                    "dateTo": "2015",
+                    "location": "Guayaquil, Ecuador",
+                    "mode": "On-site"
+                },
+                {
+                    "title": "University Degree",
+                    "degree": "Computer Science Engineer",
+                    "institution": "Escuela Superior Politécnica del Litoral - ESPOL",
+                    "dateFrom": "2015",
+                    "dateTo": "2021",
+                    "location": "Guayaquil, Ecuador",
+                    "mode": "On-site"
                 }
             ],
             "experience": [
                 {
-                    "title": "",
-                    "company": "",
-                    "dateFrom": "",
-                    "dateTo": "",
-                    "description": ""
-                }
-            ],
-            "technologies": [
+                    "position": "Computer Laboratory Assistant",
+                    "company": "Escuela Superior Politécnica del Litoral - ESPOL",
+                    "dateFrom": "05/2018",
+                    "dateTo": "10/2018",
+                    "achievements": [
+                        "Assisted in the administration of computer laboratories.",
+                        "Performed basic maintenance of computer equipment.",
+                        "Supervised access to institutional technological resources."
+                    ],
+                    "attitudes": [
+                        {
+                            "name": "Computer Maintenance",
+                            "logo": ""
+                        },
+                        {
+                            "name": "Maintenance and Repairs",
+                            "logo": ""
+                        },
+                        {
+                            "name": "Hardware",
+                            "logo": ""
+                        }
+                    ],
+                    "mode": "On-site",
+                    "location": "Guayaquil, Ecuador",
+                    "time": "Temporary Contract"
+                },
                 {
-                    "name": "",
-                    "description": ""
-                }
-            ],
-            "skills": [
+                    "position": "Software Development Intern",
+                    "company": "BlackBoxEc",
+                    "dateFrom": "06/2019",
+                    "dateTo": "12/2019",
+                    "achievements": [
+                        "Web Development of a control system for package arrival registration by Courier.",
+                        "Improvements and corrections in mobile applications.",
+                        "Improvements and corrections in web applications using ASP.NET technologies.",
+                        "Development of a desktop application for processing Excel documents."
+                    ],
+                    "attitudes": [
+                        {
+                            "name": "C#",
+                            "logo": ""
+                        },
+                        {
+                            "name": "Java",
+                            "logo": ""
+                        },
+                        {
+                            "name": "AngularJS",
+                            "logo": ""
+                        },
+                        {
+                            "name": "PostgreSQL",
+                            "logo": ""
+                        },
+                        {
+                            "name": "ASP.NET",
+                            "logo": ""
+                        },
+                        {
+                            "name": "SQL Server",
+                            "logo": ""
+                        },
+                        {
+                            "name": ".NET Core",
+                            "logo": ""
+                        }
+                    ],
+                    "mode": "On-site",
+                    "location": "Guayaquil, Ecuador",
+                    "time": "Internship Contract"
+                },
                 {
-                    "name": "",
-                    "description": ""
+                    "position": "Database Teaching Assistant",
+                    "company": "Escuela Superior Politécnica del Litoral - ESPOL",
+                    "dateFrom": "05/2019",
+                    "dateTo": "10/2019",
+                    "achievements": [
+                        "Review of workshops and tasks assigned to students.",
+                        "Teaching help classes and practical exercises.",
+                        "Providing feedback to students."
+                    ],
+                    "attitudes": [
+                        {
+                            "name": "MySQL",
+                            "logo": ""
+                        },
+                        {
+                            "name": "Teaching",
+                            "logo": ""
+                        }
+                    ],
+                    "mode": "On-site",
+                    "location": "Guayaquil, Ecuador",
+                    "time": "Temporary Contract"
+                },
+                {
+                    "position": "Full Stack Developer",
+                    "company": "Contifico S.A.",
+                    "dateFrom": "06/2020",
+                    "dateTo": "09/2020",
+                    "achievements": [
+                        "Maintenance of a web application, fixing errors and adding new features.",
+                        "Management of the MySQL database used by the web application."
+                    ],
+                    "attitudes": [
+                        {
+                            "name": "Python",
+                            "logo": ""
+                        },
+                        {
+                            "name": "Django",
+                            "logo": ""
+                        },
+                        {
+                            "name": "MySQL",
+                            "logo": ""
+                        },
+                        {
+                            "name": "Javascript",
+                            "logo": ""
+                        },
+                        {
+                            "name": "HTML",
+                            "logo": ""
+                        }
+                    ],
+                    "mode": "Remote",
+                    "location": "Guayaquil, Ecuador",
+                    "time": "Full-time"
+                },
+                {
+                    "position": "Sr. Full Stack Developer",
+                    "company": "SIIGO S.A.",
+                    "dateFrom": "09/2020",
+                    "dateTo": "Present",
+                    "achievements": [
+                        "Implementation of microservices using node.js and C#.",
+                        "Intuitive web development using Reactjs.",
+                        "Implementation of Kafka consumers and producers in microservices.",
+                        "Administration of NoSQL databases using MongoDB.",
+                        "Implementation of GraphQL services in Node.js microservices."
+                    ],
+                    "attitudes": [
+                        {
+                            "name": "Javascript",
+                            "logo": ""
+                        },
+                        {
+                            "name": "Typescript",
+                            "logo": ""
+                        },
+                        {
+                            "name": "Reactjs",
+                            "logo": ""
+                        },
+                        {
+                            "name": "Nodejs",
+                            "logo": ""
+                        },
+                        {
+                            "name": "NestJS",
+                            "logo": ""
+                        },
+                        {
+                            "name": "MongoDB",
+                            "logo": ""
+                        },
+                        {
+                            "name": "Kafka",
+                            "logo": ""
+                        },
+                        {
+                            "name": "Docker",
+                            "logo": ""
+                        },
+                        {
+                            "name": "C#",
+                            "logo": ""
+                        },
+                        {
+                            "name": ".NET Core",
+                            "logo": ""
+                        },
+                        {
+                            "name": "Azure Functions",
+                            "logo": ""
+                        },
+                        {
+                            "name": "GraphQL",
+                            "logo": ""
+                        }
+                    ],
+                    "mode": "Remote",
+                    "location": "Colombia",
+                    "time": "Full-time"
                 }
             ],
+
+            "skills": {
+                tech: [
+                    {
+                        "name": "Node.js",
+                        percentage: 75,
+                    },
+                    {
+                        name: "React.js",
+                        percentage: 70,
+                    },
+                    {
+                        name: "Javascript",
+                        percentage: 70,
+                    },
+                    {
+                        name: "Typescript",
+                        percentage: 70,
+                    },
+                    {
+                        name: "MongoDB",
+                        percentage: 60,
+                    },
+                    {
+                        name: "Docker",
+                        percentage: 60,
+                    },
+                    {
+                        name: "C#",
+                        percentage: 65,
+                    },
+                    {
+                        name: ".NET Core",
+                        percentage: 65,
+                    },
+                    {
+                        name: "Azure Functions",
+                        percentage: 70,
+                    },
+                    {
+                        name: "GraphQL",
+                        percentage: 65,
+                    },
+                    {
+                        name: "Python",
+                        percentage: 50,
+                    },
+                    {
+                        name: "Django",
+                        percentage: 50,
+                    },
+                    {
+                        name: "MySQL",
+                        percentage: 65,
+                    },
+                    {
+                        name: "CSS",
+                        percentage: 75,
+                    },
+                    {
+                        name: "AngularJS",
+                        percentage: 55,
+                    },
+                    {
+                        name: "PostgreSQL",
+                        percentage: 60,
+                    },
+                    {
+                        name: "ASP.NET",
+                        percentage: 65,
+                    },
+                    {
+                        name: "NestJS",
+                        percentage: 70,
+                    },
+                    {
+                        name: "Kafka",
+                        percentage: 60,
+                    },
+
+                ],
+                soft: [
+                    {
+                        name: "English",
+                        percentage: 45,
+                    },
+                    {
+                        "name": "Teamwork",
+                        percentage: 80,
+                    },
+                    {
+                        name: "Communication",
+                        percentage: 75,
+                    },
+                    {
+                        name: "Responsibility",
+                        percentage: 85,
+                    },
+                    {
+                        name: "Proactivity",
+                        percentage: 80,
+                    },
+                    {
+                        name: "Adaptability",
+                        percentage: 75,
+                    },
+                    {
+                        name: "Problem Solving",
+                        percentage: 85,
+                    },
+                    {
+                        name: "Creativity",
+                        percentage: 70,
+                    },
+                    {
+                        name: "Empathy",
+                        percentage: 80,
+                    }
+                ]
+            },
             "projects": [
                 {
                     "name": "",
