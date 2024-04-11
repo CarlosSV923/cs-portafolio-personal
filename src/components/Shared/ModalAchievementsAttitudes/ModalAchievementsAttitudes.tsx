@@ -1,5 +1,6 @@
 "use client";
 import { useConfig } from "@/contexts/portafolio.context";
+import { Attitude } from "@/models/data.model";
 import {
   Modal,
   ModalContent,
@@ -7,23 +8,32 @@ import {
   ModalBody,
   ModalFooter,
   Button,
+  Spacer,
 } from "@nextui-org/react";
+import { CSSProperties } from "react";
+import { AchievementList } from "./AchievementList";
+import { AttitudeList } from "./AttitudeList";
 
-export const ModalAchievements = ({
+export const ModalAchievementsAttitudes = ({
   isOpen,
   onOpenChange,
   achievements,
+  style,
+  className,
+  attitudes,
 }: {
   isOpen: boolean;
   onOpenChange: (isOpen: boolean) => void;
-  achievements: string[] | string;
+  achievements?: string[] | string;
+  attitudes?: Attitude[];
+  style?: CSSProperties;
+  className?: string;
 }) => {
   const { translations } = useConfig()!;
   return (
     <Modal
-      style={{
-        backgroundColor: "#1A1A2E",
-      }}
+      style={style}
+      className={className}
       isOpen={isOpen}
       onOpenChange={onOpenChange}
       size="lg"
@@ -33,23 +43,14 @@ export const ModalAchievements = ({
         {(onClose) => (
           <>
             <ModalHeader className="text-cyan-400 font-bold">
-              {translations.achievements}
+              {achievements && translations.achievements}
+              {achievements && attitudes ? " y " : " "}
+              {attitudes && translations.attitudes}
             </ModalHeader>
-            <ModalBody className="flex flex-col gap-1">
-              {Array.isArray(achievements) ? (
-                <ul className="list-disc list-inside">
-                  {achievements.map((achievement, index) => (
-                    <li
-                      key={`${achievement}-achievement-${index}`}
-                      className="text-white text-md"
-                    >
-                      {achievement}
-                    </li>
-                  ))}
-                </ul>
-              ) : (
-                <p className="text-white text-md">{achievements}</p>
-              )}
+            <ModalBody className="flex flex-col gap-2">
+              {achievements && <AchievementList achievements={achievements} />}
+              {attitudes && achievements && <Spacer y={3} />}
+              {attitudes && <AttitudeList attitudes={attitudes} />}
             </ModalBody>
             <ModalFooter>
               <Button

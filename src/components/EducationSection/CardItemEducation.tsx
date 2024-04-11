@@ -12,39 +12,42 @@ import {
   useDisclosure,
 } from "@nextui-org/react";
 import NextImage from "next/image";
-import { ModalAchievements } from "./ModalAchievements";
+import { ModalAchievementsAttitudes } from "../Shared/ModalAchievementsAttitudes/ModalAchievementsAttitudes";
 
 export const CardItemEducation = ({
-  index,
   education,
 }: {
-  index: number;
   education: ExperienceModel;
 }) => {
   const { translations } = useConfig()!;
   const { isOpen, onOpen, onOpenChange } = useDisclosure();
   return (
     <Card
-      key={`${education.title}-card-education-${index}`}
       shadow="sm"
       fullWidth
       className="w-full xl:w-2/5 p-3 h-max border-2 border-cyan-400 bg-transparent"
     >
-      <CardHeader className="flex item-center flex-col md:flex-row justify-between gap-2">
-        <div className="flex gap-3">
-          <Image
-            as={NextImage}
-            src={"/icons/icon_graduation-cap.png"}
-            alt={education.title}
-            width={45}
-            height={45}
-          />
+      <CardHeader className="flex item-center flex-col md:flex-row justify-center md:justify-between gap-2">
+        <div className="flex flex-col md:flex-row justify-center item-center gap-3">
+          <div className="flex justify-center item-center">
+            <Image
+              as={NextImage}
+              src={education.logo || "/icons/icon_graduation-cap.png"}
+              fallbackSrc="/icons/icon_graduation-cap.png"
+              alt={education.degree}
+              width={45}
+              height={45}
+            />
+          </div>
+
           <div className="flex flex-col">
-            <h3 className="text-white text-md font-bold">
+            <h3 className="text-white text-center md:text-start text-md font-bold">
               {education.degree ?? education.title}
             </h3>
             {education.degree && (
-              <p className="text-white text-md">{education.title}</p>
+              <p className="text-white text-center md:text-start text-md">
+                {education.title}
+              </p>
             )}
           </div>
         </div>
@@ -77,13 +80,11 @@ export const CardItemEducation = ({
           </div>
         )}
       </CardBody>
-      {(education.url || education.achievements?.length) && (
+      {(education.url ||
+        Boolean(education.achievements?.length) ||
+        Boolean(education.attitudes?.length)) && (
         <CardFooter
-          className={`flex ${
-            education.url && education.achievements?.length
-              ? "justify-between"
-              : "justify-end"
-          }`}
+          className={`flex flex-col md:flex-row justify-center md:justify-between gap-2`}
         >
           {education.url && (
             <Link
@@ -95,21 +96,28 @@ export const CardItemEducation = ({
               {translations.degreeUrl}
             </Link>
           )}
-          {education.achievements?.length && (
+          {(Boolean(education.achievements?.length) ||
+            Boolean(education.attitudes?.length)) && (
             <>
               <Button
                 size="sm"
                 variant="bordered"
                 className="rounded-2xl text-white text-md border-white hover:border-cyan-400 hover:bg-cyan-400 hover:text-black"
                 onClick={onOpen}
-            >
-                {translations.achievements}
-            </Button>
-             
-              <ModalAchievements
+              >
+                {education.achievements && translations.achievements}
+                {education.achievements && education.attitudes ? " y " : " "}
+                {education.attitudes && translations.attitudes}
+              </Button>
+
+              <ModalAchievementsAttitudes
                 isOpen={isOpen}
                 onOpenChange={onOpenChange}
                 achievements={education.achievements}
+                attitudes={education.attitudes}
+                style={{
+                  backgroundColor: "#1A1A2E",
+                }}
               />
             </>
           )}

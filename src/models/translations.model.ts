@@ -15,8 +15,11 @@ export interface TranslationModel {
     degreeUrl: string;
     mode: string;
     achievements: string;
+    attitudes: string;
     technologies: string;
     skills: string;
+    techSkills: string;
+    softSkills: string;
     projects: string;
     more: string;
     about: string;
