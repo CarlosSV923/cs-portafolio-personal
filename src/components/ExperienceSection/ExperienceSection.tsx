@@ -2,6 +2,7 @@
 import { useConfig } from "@/contexts/portafolio.context";
 import { Divider } from "@nextui-org/react";
 import { CardItemExperience } from "./CardItemExperience";
+import { TitleSection } from "../Shared/TitleSection/TitleSection";
 
 const ExperienceSection = () => {
   const { data, translations } = useConfig()!;
@@ -11,15 +12,10 @@ const ExperienceSection = () => {
       id="experience"
       className="bg-gray-800 h-full flex flex-col items-center justify-center p-8 gap-8 xl:gap-16"
     >
-      <div className="flex w-full justify-center items-center">
-        <div className="flex flex-col">
-          <h1 className="text-white text-2xl xl:text-4xl font-bold">
-            {translations.experience}
-          </h1>
-          <Divider className="mt-2 bg-cyan-400 w-32 h-1" />
-        </div>
-      </div>
-
+      <TitleSection
+        title={translations.experience}
+        classNames={{ divider: "w-32", base: "justify-center" }}
+      />
       <div className="w-full flex justify-center flex-row flex-wrap gap-8 xl:gap-16">
         {data.experience?.map((experience, index) => (
           <CardItemExperience

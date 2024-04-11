@@ -264,10 +264,6 @@ export const data = [
                         percentage: 70,
                     },
                     {
-                        name: "Javascript",
-                        percentage: 70,
-                    },
-                    {
                         name: "Typescript",
                         percentage: 70,
                     },
@@ -300,16 +296,8 @@ export const data = [
                         percentage: 50,
                     },
                     {
-                        name: "Django",
-                        percentage: 50,
-                    },
-                    {
                         name: "MySQL",
                         percentage: 65,
-                    },
-                    {
-                        name: "CSS",
-                        percentage: 75,
                     },
                     {
                         name: "AngularJS",
@@ -331,13 +319,12 @@ export const data = [
                         name: "Kafka",
                         percentage: 60,
                     },
-
-                ],
-                soft: [
                     {
                         name: "Ingles",
                         percentage: 45,
                     },
+                ],
+                soft: [
                     {
                         "name": "Trabajo en equipo",
                         percentage: 80,
@@ -654,10 +641,6 @@ export const data = [
                         percentage: 70,
                     },
                     {
-                        name: "Javascript",
-                        percentage: 70,
-                    },
-                    {
                         name: "Typescript",
                         percentage: 70,
                     },
@@ -690,10 +673,6 @@ export const data = [
                         percentage: 50,
                     },
                     {
-                        name: "Django",
-                        percentage: 50,
-                    },
-                    {
                         name: "MySQL",
                         percentage: 65,
                     },
@@ -721,13 +700,13 @@ export const data = [
                         name: "Kafka",
                         percentage: 60,
                     },
-
-                ],
-                soft: [
                     {
                         name: "English",
                         percentage: 45,
                     },
+
+                ],
+                soft: [
                     {
                         "name": "Teamwork",
                         percentage: 80,

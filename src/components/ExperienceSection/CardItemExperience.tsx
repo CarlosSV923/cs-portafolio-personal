@@ -10,7 +10,7 @@ import {
   Button,
 } from "@nextui-org/react";
 import NextImage from "next/image";
-import { ModalAchievementsAttitudes } from "../Shared/ModalAchievementsActitudes/ModalAchievementsAttitudes";
+import { ModalAchievementsAttitudes } from "../Shared/ModalAchievementsAttitudes/ModalAchievementsAttitudes";
 
 export const CardItemExperience = ({
   experience,
