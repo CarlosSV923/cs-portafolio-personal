@@ -6,7 +6,7 @@ export interface DataModel {
     experience: ExperienceModel[];
     skills: Skills;
     projects: Project[];
-    more: Skills[];
+    more: More[];
 }
 
 export interface About {
@@ -74,5 +74,11 @@ export interface Project {
     name: string;
     description: string;
     url: string;
+}
+
+export interface More {
+    name: string;
+    description: string;
+    image?: string;
 }
 
