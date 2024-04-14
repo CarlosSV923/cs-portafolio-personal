@@ -1,6 +1,6 @@
 "use client";
 import { useConfig } from "@/contexts/portafolio.context";
-import { Attitude } from "@/models/data.model";
+import { TechAttitude } from "@/models/data.model";
 import {
   Modal,
   ModalContent,
@@ -12,7 +12,7 @@ import {
 } from "@nextui-org/react";
 import { CSSProperties } from "react";
 import { AchievementList } from "./AchievementList";
-import { AttitudeList } from "./AttitudeList";
+import { TechAttitudeList } from "../TechAttitudeList/TechAttitudeList";
 
 export const ModalAchievementsAttitudes = ({
   isOpen,
@@ -25,7 +25,7 @@ export const ModalAchievementsAttitudes = ({
   isOpen: boolean;
   onOpenChange: (isOpen: boolean) => void;
   achievements?: string[] | string;
-  attitudes?: Attitude[];
+  attitudes?: TechAttitude[];
   style?: CSSProperties;
   className?: string;
 }) => {
@@ -50,7 +50,7 @@ export const ModalAchievementsAttitudes = ({
             <ModalBody className="flex flex-col gap-2">
               {achievements && <AchievementList achievements={achievements} />}
               {attitudes && achievements && <Spacer y={3} />}
-              {attitudes && <AttitudeList attitudes={attitudes} />}
+              {attitudes && <TechAttitudeList attitudes={attitudes} />}
             </ModalBody>
             <ModalFooter>
               <Button

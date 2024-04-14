@@ -95,11 +95,11 @@ export const data = [
                     attitudes: [
                         {
                             "name": "C#",
-                            "logo": ""
+                            "logo": "/portafolio_pictures/icons/icon_csharp.png"
                         },
                         {
                             "name": "Java",
-                            "logo": ""
+                            "logo": "/portafolio_pictures/icons/icon_java.png"
                         },
                         {
                             "name": "AngularJS",
@@ -107,7 +107,7 @@ export const data = [
                         },
                         {
                             "name": "PostgreSQL",
-                            "logo": ""
+                            "logo": "/portafolio_pictures/icons/icon_database.png"
                         },
                         {
                             "name": "ASP.NET",
@@ -139,7 +139,7 @@ export const data = [
                     attitudes: [
                         {
                             "name": "MySQL",
-                            "logo": ""
+                            "logo": "/portafolio_pictures/icons/icon_database.png"
                         },
                         {
                             "name": "Docencia",
@@ -163,7 +163,7 @@ export const data = [
                     attitudes: [
                         {
                             "name": "Python",
-                            "logo": ""
+                            "logo": "/portafolio_pictures/icons/icon_python.png"
                         },
                         {
                             "name": "Django",
@@ -171,11 +171,11 @@ export const data = [
                         },
                         {
                             "name": "MySQL",
-                            "logo": ""
+                            "logo": "/portafolio_pictures/icons/icon_database.png"
                         },
                         {
                             "name": "Javascript",
-                            "logo": ""
+                            "logo": "/portafolio_pictures/icons/icon_js.png"
                         },
                         {
                             "name": "HTML",
@@ -201,15 +201,15 @@ export const data = [
                     attitudes: [
                         {
                             "name": "Javascript",
-                            "logo": ""
+                            "logo": "/portafolio_pictures/icons/icon_js.png"
                         },
                         {
                             "name": "Typescript",
-                            "logo": ""
+                            "logo": "/portafolio_pictures/icons/icon_typescript.png"
                         },
                         {
                             "name": "Reactjs",
-                            "logo": ""
+                            "logo": "/portafolio_pictures/icons/icon_reactjs.png"
                         },
                         {
                             "name": "Nodejs",
@@ -221,7 +221,7 @@ export const data = [
                         },
                         {
                             "name": "MongoDB",
-                            "logo": ""
+                            "logo": "/portafolio_pictures/icons/icon_database.png"
                         },
                         {
                             "name": "Kafka",
@@ -229,11 +229,11 @@ export const data = [
                         },
                         {
                             "name": "Docker",
-                            "logo": ""
+                            "logo": "/portafolio_pictures/icons/icon_docker.png"
                         },
                         {
                             "name": "C#",
-                            "logo": ""
+                            "logo": "/portafolio_pictures/icons/icon_csharp.png"
                         },
                         {
                             "name": ".NET Core",
@@ -308,10 +308,6 @@ export const data = [
                         percentage: 60,
                     },
                     {
-                        name: "ASP.NET",
-                        percentage: 65,
-                    },
-                    {
                         name: "NestJS",
                         percentage: 70,
                     },
@@ -361,9 +357,64 @@ export const data = [
             },
             "projects": [
                 {
-                    "name": "",
-                    "description": "",
-                    "url": ""
+                    "name": "Aurora",
+                    "type": "Proyecto Web",
+                    "owner": "Siigo S.A.",
+                    "typeOwner": "Empresa",
+                    "description": "Pasarela de pagos para la empresa Siigo S.A. que permite a los usuarios realizar pagos de sus facturas de forma segura y rápida.",
+                    "repositoryUrl": "",
+                    "companyUrl": "https://siigo.com",
+                    "backgroundPicture": "/portafolio_pictures/bg_project_aurora.png",
+                    "technologies": [
+                        {
+                            "name": "React.js",
+                            "logo": "/portafolio_pictures/icons/icon_reactjs.png"
+                        },
+                        {
+                            "name": "NestJs",
+                            "logo": ""
+                        },
+                        {
+                            "name": "MongoDB",
+                            "logo": "/portafolio_pictures/icons/icon_database.png"
+                        },
+                        {
+                            "name": "C#",
+                            "logo": "/portafolio_pictures/icons/icon_csharp.png"
+                        },
+                        {
+                            "name": "Azure",
+                            "logo": ""
+                        }
+
+                    ]
+                }, {
+                    "name": "Portafolio Personal",
+                    "type": "Proyecto Frontend",
+                    "owner": "Carlos Sesme",
+                    "typeOwner": "Personal",
+                    "description": "Portafolio personal que muestra la información profesional, educativa y laboral. Personalización de la información mediante archivos JSON.",
+                    "repositoryUrl": "https://github.com/CarlosSV923/portafolio-personal",
+                    "companyUrl": "",
+                    "backgroundPicture": "/portafolio_pictures/bg_project_portafolio.png",
+                    "technologies": [
+                        {
+                            "name": "React.js",
+                            "logo": "/portafolio_pictures/icons/icon_reactjs.png"
+                        },
+                        {
+                            "name": "Next.js",
+                            "logo": ""
+                        },
+                        {
+                            "name": "TailwindCSS",
+                            "logo": ""
+                        },
+                        {
+                            "name": "Vercel",
+                            "logo": ""
+                        }
+                    ]
                 }
             ],
             "more": [
@@ -472,11 +523,11 @@ export const data = [
                     "attitudes": [
                         {
                             "name": "C#",
-                            "logo": ""
+                            "logo": "/portafolio_pictures/icons/icon_csharp.png"
                         },
                         {
                             "name": "Java",
-                            "logo": ""
+                            "logo": "/portafolio_pictures/icons/icon_java.png"
                         },
                         {
                             "name": "AngularJS",
@@ -484,7 +535,7 @@ export const data = [
                         },
                         {
                             "name": "PostgreSQL",
-                            "logo": ""
+                            "logo": "/portafolio_pictures/icons/icon_database.png"
                         },
                         {
                             "name": "ASP.NET",
@@ -516,7 +567,7 @@ export const data = [
                     "attitudes": [
                         {
                             "name": "MySQL",
-                            "logo": ""
+                            "logo": "/portafolio_pictures/icons/icon_database.png"
                         },
                         {
                             "name": "Teaching",
@@ -547,11 +598,11 @@ export const data = [
                         },
                         {
                             "name": "MySQL",
-                            "logo": ""
+                            "logo": "/portafolio_pictures/icons/icon_database.png"
                         },
                         {
                             "name": "Javascript",
-                            "logo": ""
+                            "logo": "/portafolio_pictures/icons/icon_js.png"
                         },
                         {
                             "name": "HTML",
@@ -577,15 +628,15 @@ export const data = [
                     "attitudes": [
                         {
                             "name": "Javascript",
-                            "logo": ""
+                            "logo": "/portafolio_pictures/icons/icon_js.png"
                         },
                         {
                             "name": "Typescript",
-                            "logo": ""
+                            "logo": "/portafolio_pictures/icons/icon_typescript.png"
                         },
                         {
                             "name": "Reactjs",
-                            "logo": ""
+                            "logo": "/portafolio_pictures/icons/icon_reactjs.png"
                         },
                         {
                             "name": "Nodejs",
@@ -605,11 +656,11 @@ export const data = [
                         },
                         {
                             "name": "Docker",
-                            "logo": ""
+                            "logo": "/portafolio_pictures/icons/icon_docker.png"
                         },
                         {
                             "name": "C#",
-                            "logo": ""
+                            "logo": "/portafolio_pictures/icons/icon_csharp.png"
                         },
                         {
                             "name": ".NET Core",
@@ -689,10 +740,6 @@ export const data = [
                         percentage: 60,
                     },
                     {
-                        name: "ASP.NET",
-                        percentage: 65,
-                    },
-                    {
                         name: "NestJS",
                         percentage: 70,
                     },
@@ -743,9 +790,61 @@ export const data = [
             },
             "projects": [
                 {
-                    "name": "",
-                    "description": "",
-                    "url": ""
+                    "name": "Aurora",
+                    "type": "Web Project",
+                    "owner": "Siigo S.A.",
+                    "typeOwner": "Company",
+                    "description": "Payment gateway for the company Siigo S.A. that allows users to make payments for their invoices securely and quickly.",
+                    "repositoryUrl": "",
+                    "backgroundPicture": "",
+                    "technologies": [
+                        {
+                            "name": "React.js",
+                            "logo": "/portafolio_pictures/icons/icon_reactjs.png"
+                        },
+                        {
+                            "name": "NestJs",
+                            "logo": ""
+                        },
+                        {
+                            "name": "MongoDB",
+                            "logo": "/portafolio_pictures/icons/icon_database.png"
+                        },
+                        {
+                            "name": "C#",
+                            "logo": "/portafolio_pictures/icons/icon_csharp.png"
+                        },
+                        {
+                            "name": "Azure",
+                            "logo": ""
+                        }
+                    ]
+                }, {
+                    "name": "Personal Portfolio",
+                    "type": "Frontend Project",
+                    "owner": "Carlos Sesme",
+                    "typeOwner": "Personal",
+                    "description": "Personal portfolio that shows professional, educational, and work information. Customization of information using JSON files.",
+                    "repositoryUrl": "",
+                    "backgroundPicture": "",
+                    "technologies": [
+                        {
+                            "name": "React.js",
+                            "logo": "/portafolio_pictures/icons/icon_reactjs.png"
+                        },
+                        {
+                            "name": "Next.js",
+                            "logo": ""
+                        },
+                        {
+                            "name": "TailwindCSS",
+                            "logo": ""
+                        },
+                        {
+                            "name": "Vercel",
+                            "logo": ""
+                        }
+                    ]
                 }
             ],
             "more": [
