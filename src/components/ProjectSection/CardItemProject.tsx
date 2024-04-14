@@ -1,3 +1,4 @@
+"use client";
 import { Project } from "@/models/data.model";
 import {
   Card,
@@ -9,8 +10,11 @@ import {
 import NextImage from "next/image";
 import { ButtonRedirect } from "./ButtonRedirect";
 import { TechAttitudeList } from "../Shared/TechAttitudeList/TechAttitudeList";
+import { useConfig } from "@/contexts/portafolio.context";
 
 export const CardItemProject = ({ project }: { project: Project }) => {
+  const { translations } = useConfig()!;
+
   return (
     <Card
       shadow="sm"
@@ -32,7 +36,7 @@ export const CardItemProject = ({ project }: { project: Project }) => {
           <h3 className="text-cyan-400 text-lg font-bold">{project.name}</h3>
           {project.owner && project.typeOwner && (
             <p className="text-white text-md">
-              Propiedad de: {project.owner} {`(${project.typeOwner})`}
+              {translations.projectOwner}: {project.owner} {`(${project.typeOwner})`}
             </p>
           )}
           {project.type && <p className="text-white text-md">{project.type}</p>}
@@ -48,10 +52,10 @@ export const CardItemProject = ({ project }: { project: Project }) => {
       </CardBody>
       <CardFooter className="flex flex-col item-center justify-center gap-4">
         {project.repositoryUrl && (
-          <ButtonRedirect url={project.repositoryUrl} label="Ver Repositorio" />
+          <ButtonRedirect url={project.repositoryUrl} label={translations.repositoryUrl} />
         )}
         {project.companyUrl && (
-          <ButtonRedirect url={project.companyUrl} label="Ir a Empresa" />
+          <ButtonRedirect url={project.companyUrl} label={translations.companyUrl} />
         )}
       </CardFooter>
     </Card>

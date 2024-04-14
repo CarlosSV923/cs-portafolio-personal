@@ -417,7 +417,7 @@ export const data = [
                     ]
                 }
             ],
-            "more": [
+            "interests": [
                 {
                     "name": "",
                     "description": ""
@@ -847,7 +847,7 @@ export const data = [
                     ]
                 }
             ],
-            "more": [
+            "interests": [
                 {
                     "name": "",
                     "description": ""

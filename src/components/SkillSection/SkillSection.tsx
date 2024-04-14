@@ -13,7 +13,7 @@ const SkillSection = () => {
     >
       <TitleSection
         title={translations.skills}
-        classNames={{ divider: "w-24", base: "justify-center" }}
+        classNames={{ divider: "w-16 xl:w-24", base: "justify-center" }}
       />
       <div className="flex flex-col w-full gap-8 xl:gap-16">
         {data.skills?.tech && (

@@ -6,7 +6,7 @@ export interface DataModel {
     experience: ExperienceModel[];
     skills: Skills;
     projects: Project[];
-    more: More[];
+    interests: Interest[];
 }
 
 export interface About {
@@ -81,7 +81,7 @@ export interface Project {
     technologies?: TechAttitude[];
 }
 
-export interface More {
+export interface Interest {
     name: string;
     description: string;
     image?: string;
