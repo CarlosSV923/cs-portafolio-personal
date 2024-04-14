@@ -35,17 +35,16 @@ export interface ExperienceModel {
     url?: string;
     location?: string;
     mode?: string;
-    attitudes?: Attitude[];
+    attitudes?: TechAttitude[];
 
     time?: string;
     company?: string;
     position?: string;
 }
 
-export interface Attitude {
+export interface TechAttitude {
     name: string;
     logo?: string;
-    description?: string;
 }
 
 export interface General {
@@ -72,8 +71,14 @@ export interface SkillType {
 
 export interface Project {
     name: string;
-    description: string;
-    url: string;
+    owner: string;
+    type: string;
+    typeOwner: string;
+    backgroundPicture?: string;
+    description?: string;
+    repositoryUrl?: string;
+    companyUrl?: string;
+    technologies?: TechAttitude[];
 }
 
 export interface More {
