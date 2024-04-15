@@ -419,8 +419,15 @@ export const data = [
             ],
             "interests": [
                 {
-                    "name": "",
-                    "description": ""
+                    "name": "Viajes y Fotografía",
+                    "description": "Me encanta viajar y conocer nuevos lugares, así como capturar esos momentos con mi cámara fotográfica o celular.",
+                    "url": "https://www.instagram.com/d3v.il.923/",
+                    "logo": "",
+                    "image": "/portafolio_pictures/interest_travel_photography.jpg"
+
+                },{
+                    "name": "Videojuegos",
+                    "description": "Me gustan los videojuegos, en especial los Shutters.",
                 }
             ]
         }
@@ -849,8 +856,14 @@ export const data = [
             ],
             "interests": [
                 {
-                    "name": "",
-                    "description": ""
+                    "name": "Travel and Photography",
+                    "description": "I love to travel and discover new places, as well as capture those moments with my camera or cell phone.",
+                    "url": "https://www.instagram.com/d3v.il.923/",
+                    "image": "/portafolio_pictures/interst_travel_photography.jpg"
+                },
+                {
+                    "name": "Video Games",
+                    "description": "I like video games, especially Shutters.",
                 }
             ]
         }

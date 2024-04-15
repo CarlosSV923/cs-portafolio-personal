@@ -83,7 +83,9 @@ export interface Project {
 
 export interface Interest {
     name: string;
-    description: string;
     image?: string;
+    url?: string;
+    description?: string;
+    logo?: string;
 }
 
