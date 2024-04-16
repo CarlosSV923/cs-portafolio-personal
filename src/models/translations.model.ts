@@ -25,6 +25,7 @@ export interface TranslationModel {
     repositoryUrl: string;
     companyUrl: string;
     interests: string;
+    interesUrl: string;
     about: string;
     contact: string;
     firstName: string;

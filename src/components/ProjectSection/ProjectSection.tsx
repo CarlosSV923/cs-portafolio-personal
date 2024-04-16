@@ -16,7 +16,7 @@ const ProjectSection = () => {
     >
       <TitleSection
         title={translations.projects}
-        classNames={{ divider: "w-16 xl:w-32", base: "justify-center" }}
+        classNames={{ divider: "w-16 xl:w-24", base: "justify-center" }}
       />
 
       <div className="w-full flex justify-center flex-row flex-wrap gap-8 xl:gap-16">

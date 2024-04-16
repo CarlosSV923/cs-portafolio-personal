@@ -1,3 +1,5 @@
+"use client";
+import { useConfig } from "@/contexts/portafolio.context";
 import { Interest } from "@/models/data.model";
 import {
   Card,
@@ -10,13 +12,28 @@ import {
 import NextImage from "next/image";
 
 export const CardItemInterest = ({ interest }: { interest: Interest }) => {
+  const { translations } = useConfig()!;
   return (
     <Card
       shadow="sm"
       fullWidth
-      className="w-full md:w-5/12 xl:w-1/4 p-2 h-max bg-gray-800"
+      style={{
+        backgroundColor: "#1A1A2E",
+      }}
+      className="w-full md:w-5/12 xl:w-1/4 p-2 h-max"
     >
-      <CardHeader className="flex flex-col item-center justify-center gap-4">
+      <CardHeader className="flex flex-col item-center justify-center gap-2">
+        <Image
+          as={NextImage}
+          src={interest.logo || "/icons/icon_interest.png"}
+          alt={interest.name}
+          width={40}
+          height={40}
+          isZoomed
+          loading="eager"
+          radius="none"
+        />
+
         {/* <div className="flex flex-col w-full"> */}
         {interest.name && (
           <h3 className="text-cyan-400 text-lg font-bold">{interest.name}</h3>
@@ -30,7 +47,6 @@ export const CardItemInterest = ({ interest }: { interest: Interest }) => {
         <Image
           as={NextImage}
           src={interest.image || "/default_bgProject.png"}
-          fallbackSrc="/default_bgProject.png"
           alt={interest.name}
           width={550}
           height={800}
@@ -38,20 +54,18 @@ export const CardItemInterest = ({ interest }: { interest: Interest }) => {
           loading="eager"
         />
       </CardBody>
-      {
-        interest.url && (
-          <CardFooter className="flex flex-col item-center justify-center gap-4">
-            <Link
-              className="text-white text-md hover:text-cyan-400"
-              isExternal
-              showAnchorIcon
-              href={interest.url}
-            >
-              {"Ver sitio"}
-            </Link>
-          </CardFooter>
-        )
-      }
+      {interest.url && (
+        <CardFooter className="flex flex-col item-center justify-center gap-4">
+          <Link
+            className="text-white text-md hover:text-cyan-400"
+            isExternal
+            showAnchorIcon
+            href={interest.url}
+          >
+            {translations.interesUrl}
+          </Link>
+        </CardFooter>
+      )}
     </Card>
   );
 };
