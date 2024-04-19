@@ -4,7 +4,7 @@ import { TitleSection } from "../Shared/TitleSection/TitleSection";
 import { CardItemContact } from "./CardItemContact";
 
 const ContactSection = () => {
-  const { translations } = useConfig()!;
+  const { data, translations } = useConfig()!;
 
   return (
     <div
@@ -16,12 +16,45 @@ const ContactSection = () => {
         classNames={{ divider: "w-16 xl:w-24", base: "justify-center" }}
       />
       <div className="w-full flex justify-center flex-row flex-wrap gap-8 xl:gap-12">
-        <CardItemContact />
-        <CardItemContact />
-        <CardItemContact />
-        <CardItemContact />
+        <CardItemContact 
+          icon={"/icons/icon_linkedin_white.png"}
+          conatactValue={data.contact.linkedin}
+          label="LinkedIn"
+          action={() => window.open(data.contact.linkedin, "_blank")}
+          actionText="Ver perfil"
+          classNameFrontCard="bg-cyan-400"
+        />
+        <CardItemContact 
+          icon={"/icons/icon_github_white.png"}
+          conatactValue={data.contact.github}
+          label="GitHub"
+          action={() => window.open(data.contact.github, "_blank")}
+          actionText="Ver perfil"
+          classNameFrontCard="bg-cyan-400"
+        />
+        <CardItemContact 
+          icon={"/icons/icon_email_white.png"}
+          conatactValue={data.contact.email}
+          label="Email"
+          action={() => window.open(`mailto:${data.contact.email}`)}
+          actionText="Enviar correo"
+          classNameFrontCard="bg-cyan-400"
+        />
+        <CardItemContact 
+          icon={"/icons/icon_call_white.png"}
+          conatactValue={data.contact.phone}
+          label="Celular"
+          action={() => window.open(`tel:${data.contact.phone}`)}
+          actionText="Llamar"
+          classNameFrontCard="bg-cyan-400"
+        />
 
-        <CardItemContact />
+        <CardItemContact 
+          icon={"/icons/icon_address_white.png"}
+          conatactValue={data.contact.address}
+          label="Dirección"
+          classNameFrontCard="bg-cyan-400"
+        />
       </div>
     </div>
   );
