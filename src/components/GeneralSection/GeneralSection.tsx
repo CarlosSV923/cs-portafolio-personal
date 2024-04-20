@@ -4,10 +4,10 @@ import { Avatar, Image } from "@nextui-org/react";
 import NextImage from "next/image";
 import { useEffect, useState } from "react";
 import { AccessButton } from "./AccessButton";
-import { order } from "@/configuration/order";
+import { IconsDefault } from "@/configuration/images.icons.default";
 
 const GeneralSection = () => {
-  const { data } = useConfig()!;
+  const { data, translations } = useConfig()!;
 
   const [screenSize, setScreenSize] = useState<{
     width: number;
@@ -75,8 +75,8 @@ const GeneralSection = () => {
               target="_blank"
               height={23}
               href={data.contact?.github}
-              srcImg="/icons/icon_github_cyan.png"
-              text="Github"
+              srcImg={IconsDefault.ICON_GITHUB_CYAN}
+              text={translations.github}
               width={23}
             />
           )}
@@ -85,8 +85,8 @@ const GeneralSection = () => {
               target="_blank"
               height={23}
               href={data.contact?.linkedin}
-              srcImg="/icons/icon_linkedin_cyan.png"
-              text="LinkedIn"
+              srcImg={IconsDefault.ICON_LINKEDIN_CYAN}
+              text={translations.linkedin}
               width={23}
             />
           )}

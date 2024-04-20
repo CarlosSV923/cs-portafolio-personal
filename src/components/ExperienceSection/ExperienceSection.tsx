@@ -1,6 +1,5 @@
 "use client";
 import { useConfig } from "@/contexts/portafolio.context";
-import { Divider } from "@nextui-org/react";
 import { CardItemExperience } from "./CardItemExperience";
 import { TitleSection } from "../Shared/TitleSection/TitleSection";
 

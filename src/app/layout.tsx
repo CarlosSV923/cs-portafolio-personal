@@ -3,17 +3,20 @@ import { Montserrat } from "next/font/google";
 
 import { NextUIGlobalProvider } from "./nextUI.global.provider";
 import { PortafolioProvider } from "../contexts/portafolio.context";
-
+import { IconsDefault } from "../configuration/images.icons.default";
 import "./globals.css";
 
-const montserrat = Montserrat({ subsets: ["latin"], style: ["normal", "italic"] });
+const montserrat = Montserrat({
+  subsets: ["latin"],
+  style: ["normal", "italic"],
+});
 
 export const metadata: Metadata = {
   title: "Portafolio Personal",
   description: "Portafolio personal de desarrollo web",
   icons: {
-    icon: "/icons/software-engineer.png"
-  }
+    icon: IconsDefault.SOFTWARE_ENGINEER,
+  },
 };
 
 export default function RootLayout({

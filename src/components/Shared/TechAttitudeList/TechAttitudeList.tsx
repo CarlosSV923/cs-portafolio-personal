@@ -1,6 +1,7 @@
 import { TechAttitude } from "@/models/data.model";
 import { Chip, Image } from "@nextui-org/react";
 import NextImage from "next/image";
+import { IconsDefault } from "@/configuration/images.icons.default";
 
 export const TechAttitudeList = ({
   attitudes,
@@ -18,8 +19,7 @@ export const TechAttitudeList = ({
             startContent={
               <Image
                 as={NextImage}
-                src={attitude.logo || "/icons/icon_code_white.png"}
-                fallbackSrc="/icons/icon_code.png"
+                src={attitude.logo || IconsDefault.ICON_CODE_WHITE}
                 alt={attitude.name}
                 width={20}
                 height={20}

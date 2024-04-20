@@ -7,9 +7,9 @@ export const data = [
                 "secondName": "Anthony",
                 "firstLastName": "Sesme",
                 "secondLastName": "Vera",
-                "navbarPicture": "/portafolio_pictures/navbar_picture.jpg",
-                "avatarPicture": "/portafolio_pictures/avatar_picture.jpg",
-                "backgroundPicture": "/portafolio_pictures/background_picture.jpg",
+                "navbarPicture": "/images/personalized/navbar_picture.jpg",
+                "avatarPicture": "/images/personalized/avatar_picture.jpg",
+                "backgroundPicture": "/images/personalized/background_picture.jpg",
                 "profession": "Desarrollador de Software",
                 "navbarText": "CS"
             },
@@ -21,7 +21,7 @@ export const data = [
                 "linkedin": "https://www.linkedin.com/in/carlos-sesme-vera-342769172/",
             },
             "about": {
-                "aboutPicture": "/portafolio_pictures/about_picture.jpg",
+                "aboutPicture": "/images/personalized/about_picture.jpg",
                 "description": "Ingeniero de Software con cuatro años de experiencia profesional, competente y apasionado por la tecnología. Mi formación sólida académica se complementa con un aprendizaje continuo de las últimas tendencias tecnológicas. Cuento con amplia experiencia en desarrollo web, diseño de sistemas y gestión de proyectos. Poseo una destacada capacidad para resolver problemas tecnológicos, proponiendo soluciones innovadoras, robustas y escalables. Mis habilidades en comunicación, trabajo en equipo y responsabilidad me permiten colaborar eficazmente en entornos laborales dinámicos y desafiantes.",
                 "urlCurriculum": "files/cv.pdf",
             },
@@ -95,11 +95,11 @@ export const data = [
                     attitudes: [
                         {
                             "name": "C#",
-                            "logo": "/portafolio_pictures/icons/icon_csharp.png"
+                            "logo": "/icons/personalized/icon_csharp.png"
                         },
                         {
                             "name": "Java",
-                            "logo": "/portafolio_pictures/icons/icon_java.png"
+                            "logo": "/icons/personalized/icon_java.png"
                         },
                         {
                             "name": "AngularJS",
@@ -107,7 +107,7 @@ export const data = [
                         },
                         {
                             "name": "PostgreSQL",
-                            "logo": "/portafolio_pictures/icons/icon_database.png"
+                            "logo": "/icons/personalized/icon_database.png"
                         },
                         {
                             "name": "ASP.NET",
@@ -139,7 +139,7 @@ export const data = [
                     attitudes: [
                         {
                             "name": "MySQL",
-                            "logo": "/portafolio_pictures/icons/icon_database.png"
+                            "logo": "/images/personalized/icons/icon_database.png"
                         },
                         {
                             "name": "Docencia",
@@ -163,7 +163,7 @@ export const data = [
                     attitudes: [
                         {
                             "name": "Python",
-                            "logo": "/portafolio_pictures/icons/icon_python.png"
+                            "logo": "/icons/personalized/icon_python.png"
                         },
                         {
                             "name": "Django",
@@ -171,11 +171,11 @@ export const data = [
                         },
                         {
                             "name": "MySQL",
-                            "logo": "/portafolio_pictures/icons/icon_database.png"
+                            "logo": "/icons/personalized/icon_database.png"
                         },
                         {
                             "name": "Javascript",
-                            "logo": "/portafolio_pictures/icons/icon_js.png"
+                            "logo": "/icons/personalized/icon_js.png"
                         },
                         {
                             "name": "HTML",
@@ -201,15 +201,15 @@ export const data = [
                     attitudes: [
                         {
                             "name": "Javascript",
-                            "logo": "/portafolio_pictures/icons/icon_js.png"
+                            "logo": "/icons/personalized/icon_js.png"
                         },
                         {
                             "name": "Typescript",
-                            "logo": "/portafolio_pictures/icons/icon_typescript.png"
+                            "logo": "/icons/personalized/icon_typescript.png"
                         },
                         {
                             "name": "Reactjs",
-                            "logo": "/portafolio_pictures/icons/icon_reactjs.png"
+                            "logo": "/icons/personalized/icon_reactjs.png"
                         },
                         {
                             "name": "Nodejs",
@@ -221,7 +221,7 @@ export const data = [
                         },
                         {
                             "name": "MongoDB",
-                            "logo": "/portafolio_pictures/icons/icon_database.png"
+                            "logo": "/icons/personalized/icon_database.png"
                         },
                         {
                             "name": "Kafka",
@@ -229,11 +229,11 @@ export const data = [
                         },
                         {
                             "name": "Docker",
-                            "logo": "/portafolio_pictures/icons/icon_docker.png"
+                            "logo": "/icons/personalized/icon_docker.png"
                         },
                         {
                             "name": "C#",
-                            "logo": "/portafolio_pictures/icons/icon_csharp.png"
+                            "logo": "/icons/personalized/icon_csharp.png"
                         },
                         {
                             "name": ".NET Core",
@@ -364,11 +364,11 @@ export const data = [
                     "description": "Pasarela de pagos para la empresa Siigo S.A. que permite a los usuarios realizar pagos de sus facturas de forma segura y rápida.",
                     "repositoryUrl": "",
                     "companyUrl": "https://siigo.com",
-                    "backgroundPicture": "/portafolio_pictures/bg_project_aurora.png",
+                    "backgroundPicture": "/images/personalized/bg_project_aurora.png",
                     "technologies": [
                         {
                             "name": "React.js",
-                            "logo": "/portafolio_pictures/icons/icon_reactjs.png"
+                            "logo": "/icons/personalized/icon_reactjs.png"
                         },
                         {
                             "name": "NestJs",
@@ -376,11 +376,11 @@ export const data = [
                         },
                         {
                             "name": "MongoDB",
-                            "logo": "/portafolio_pictures/icons/icon_database.png"
+                            "logo": "/icons/personalized/icon_database.png"
                         },
                         {
                             "name": "C#",
-                            "logo": "/portafolio_pictures/icons/icon_csharp.png"
+                            "logo": "/icons/personalized/icon_csharp.png"
                         },
                         {
                             "name": "Azure",
@@ -396,11 +396,11 @@ export const data = [
                     "description": "Portafolio personal que muestra la información profesional, educativa y laboral. Personalización de la información mediante archivos JSON.",
                     "repositoryUrl": "https://github.com/CarlosSV923/portafolio-personal",
                     "companyUrl": "",
-                    "backgroundPicture": "/portafolio_pictures/bg_project_portafolio.png",
+                    "backgroundPicture": "/images/personalized/bg_project_portafolio.png",
                     "technologies": [
                         {
                             "name": "React.js",
-                            "logo": "/portafolio_pictures/icons/icon_reactjs.png"
+                            "logo": "/icons/personalized/icon_reactjs.png"
                         },
                         {
                             "name": "Next.js",
@@ -422,14 +422,14 @@ export const data = [
                     "name": "Viajes y Fotografía",
                     "description": "Me encanta viajar y conocer nuevos lugares, así como capturar esos momentos con mi cámara fotográfica o celular.",
                     "url": "https://www.instagram.com/d3v.il.923/",
-                    "logo": "/portafolio_pictures/icons/icon_tripod.png",
-                    "image": "/portafolio_pictures/interest_travel_photography.jpg"
+                    "logo": "/icons/personalized/icon_tripod.png",
+                    "image": "/images/personalized/interest_travel_photography.jpg"
 
                 },{
                     "name": "Pc Gaming",
                     "description": "Me gusta todo lo relacionado con el mundo del gaming, hardware de PC y tecnología en general.",
-                    "logo": "/portafolio_pictures/icons/icon_game-console.png",
-                    "image": "/portafolio_pictures/interest_setup_gamer.jpg"
+                    "logo": "/icons/personalized/icon_game-console.png",
+                    "image": "/images/personalized/interest_setup_gamer.jpg"
                 }
             ]
         }
@@ -532,11 +532,11 @@ export const data = [
                     "attitudes": [
                         {
                             "name": "C#",
-                            "logo": "/portafolio_pictures/icons/icon_csharp.png"
+                            "logo": "/icons/personalized/icon_csharp.png"
                         },
                         {
                             "name": "Java",
-                            "logo": "/portafolio_pictures/icons/icon_java.png"
+                            "logo": "/icons/personalized/icon_java.png"
                         },
                         {
                             "name": "AngularJS",
@@ -544,7 +544,7 @@ export const data = [
                         },
                         {
                             "name": "PostgreSQL",
-                            "logo": "/portafolio_pictures/icons/icon_database.png"
+                            "logo": "/icons/personalized/icon_database.png"
                         },
                         {
                             "name": "ASP.NET",
@@ -576,7 +576,7 @@ export const data = [
                     "attitudes": [
                         {
                             "name": "MySQL",
-                            "logo": "/portafolio_pictures/icons/icon_database.png"
+                            "logo": "/icons/personalized/icon_database.png"
                         },
                         {
                             "name": "Teaching",
@@ -607,11 +607,11 @@ export const data = [
                         },
                         {
                             "name": "MySQL",
-                            "logo": "/portafolio_pictures/icons/icon_database.png"
+                            "logo": "/icons/personalized/icon_database.png"
                         },
                         {
                             "name": "Javascript",
-                            "logo": "/portafolio_pictures/icons/icon_js.png"
+                            "logo": "/icons/personalized/icon_js.png"
                         },
                         {
                             "name": "HTML",
@@ -637,15 +637,15 @@ export const data = [
                     "attitudes": [
                         {
                             "name": "Javascript",
-                            "logo": "/portafolio_pictures/icons/icon_js.png"
+                            "logo": "/icons/personalized/icon_js.png"
                         },
                         {
                             "name": "Typescript",
-                            "logo": "/portafolio_pictures/icons/icon_typescript.png"
+                            "logo": "/icons/personalized/icon_typescript.png"
                         },
                         {
                             "name": "Reactjs",
-                            "logo": "/portafolio_pictures/icons/icon_reactjs.png"
+                            "logo": "/icons/personalized/icon_reactjs.png"
                         },
                         {
                             "name": "Nodejs",
@@ -665,11 +665,11 @@ export const data = [
                         },
                         {
                             "name": "Docker",
-                            "logo": "/portafolio_pictures/icons/icon_docker.png"
+                            "logo": "/icons/personalized/icon_docker.png"
                         },
                         {
                             "name": "C#",
-                            "logo": "/portafolio_pictures/icons/icon_csharp.png"
+                            "logo": "/icons/personalized/icon_csharp.png"
                         },
                         {
                             "name": ".NET Core",
@@ -809,7 +809,7 @@ export const data = [
                     "technologies": [
                         {
                             "name": "React.js",
-                            "logo": "/portafolio_pictures/icons/icon_reactjs.png"
+                            "logo": "/icons/personalized/icon_reactjs.png"
                         },
                         {
                             "name": "NestJs",
@@ -817,11 +817,11 @@ export const data = [
                         },
                         {
                             "name": "MongoDB",
-                            "logo": "/portafolio_pictures/icons/icon_database.png"
+                            "logo": "/icons/personalized/icon_database.png"
                         },
                         {
                             "name": "C#",
-                            "logo": "/portafolio_pictures/icons/icon_csharp.png"
+                            "logo": "/icons/personalized/icon_csharp.png"
                         },
                         {
                             "name": "Azure",
@@ -839,7 +839,7 @@ export const data = [
                     "technologies": [
                         {
                             "name": "React.js",
-                            "logo": "/portafolio_pictures/icons/icon_reactjs.png"
+                            "logo": "/icons/personalized/icon_reactjs.png"
                         },
                         {
                             "name": "Next.js",
@@ -861,14 +861,14 @@ export const data = [
                     "name": "Travel and Photography",
                     "description": "I love to travel and discover new places, as well as capture those moments with my camera or cell phone.",
                     "url": "https://www.instagram.com/d3v.il.923/",
-                    "image": "/portafolio_pictures/interst_travel_photography.jpg",
-                    "logo": "/portafolio_pictures/icons/icon_tripod.png"
+                    "image": "/images/personalized/interst_travel_photography.jpg",
+                    "logo": "/icons/personalized/icon_tripod.png"
                 },
                 {
                     "name": "Pc Gaming",
                     "description": "I like everything related to the gaming world, PC hardware, and technology in general.",
-                    "logo": "/portafolio_pictures/icons/icon_game-console.png",
-                    "image":"/portafolio_pictures/interest_setup_gamer.jpg"
+                    "logo": "/icons/personalized/icon_game-console.png",
+                    "image":"/images/personalized/interest_setup_gamer.jpg"
                 }
             ]
         }

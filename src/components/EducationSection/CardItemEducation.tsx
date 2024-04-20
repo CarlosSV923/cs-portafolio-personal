@@ -13,6 +13,7 @@ import {
 } from "@nextui-org/react";
 import NextImage from "next/image";
 import { ModalAchievementsAttitudes } from "../Shared/ModalAchievementsAttitudes/ModalAchievementsAttitudes";
+import { IconsDefault } from "@/configuration/images.icons.default";
 
 export const CardItemEducation = ({
   education,
@@ -32,8 +33,7 @@ export const CardItemEducation = ({
           <div className="flex justify-center item-center">
             <Image
               as={NextImage}
-              src={education.logo || "/icons/icon_graduation-cap.png"}
-              fallbackSrc="/icons/icon_graduation-cap.png"
+              src={education.logo || IconsDefault.ICON_GRADUATION_CAP_CYAN}
               alt={education.degree}
               width={45}
               height={45}

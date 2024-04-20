@@ -1,5 +1,7 @@
 import { Image } from "@nextui-org/react";
 import NextImage from "next/image";
+import { IconsDefault } from "@/configuration/images.icons.default";
+
 export const ButtonRedirect = ({
   url,
   label,
@@ -16,7 +18,7 @@ export const ButtonRedirect = ({
       <div className="flex flex-col item-center justify-center">
         <Image
           as={NextImage}
-          src="/icons/icon_right-arrow.png"
+          src={IconsDefault.ICON_RIGHT_ARROW_CYAN}
           alt="Company"
           width={20}
           height={20}

@@ -11,6 +11,7 @@ import NextImage from "next/image";
 import { ButtonRedirect } from "./ButtonRedirect";
 import { TechAttitudeList } from "../Shared/TechAttitudeList/TechAttitudeList";
 import { useConfig } from "@/contexts/portafolio.context";
+import { ImagesDefault } from "@/configuration/images.icons.default";
 
 export const CardItemProject = ({ project }: { project: Project }) => {
   const { translations } = useConfig()!;
@@ -24,7 +25,7 @@ export const CardItemProject = ({ project }: { project: Project }) => {
       <CardHeader className="flex flex-col item-center justify-center gap-4">
         <Image
           as={NextImage}
-          src={project.backgroundPicture || "/default_bgProject.png"}
+          src={project.backgroundPicture || ImagesDefault.IMAGE_BG_PROJECTS}
           fallbackSrc="/default_bgProject.png"
           alt={project.name}
           width={350}
