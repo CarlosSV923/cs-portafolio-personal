@@ -91,7 +91,7 @@ const GeneralSection = () => {
             />
           )}
         </div>
-        <div>
+        {/* <div>
           <AccessButton
             height={23}
             href={`#${order[order.length - 1]}`}
@@ -99,7 +99,7 @@ const GeneralSection = () => {
             text="Bajar"
             width={23}
           />
-        </div>
+        </div> */}
       </div>
     </div>
   );

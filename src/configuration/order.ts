@@ -4,6 +4,6 @@ export const order = [
     "experience",	
     "skills",
     "projects",
-    "more",
+    "interests",
     "contact"
 ]

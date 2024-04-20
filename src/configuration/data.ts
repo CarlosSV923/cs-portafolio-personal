@@ -417,10 +417,19 @@ export const data = [
                     ]
                 }
             ],
-            "more": [
+            "interests": [
                 {
-                    "name": "",
-                    "description": ""
+                    "name": "Viajes y Fotografía",
+                    "description": "Me encanta viajar y conocer nuevos lugares, así como capturar esos momentos con mi cámara fotográfica o celular.",
+                    "url": "https://www.instagram.com/d3v.il.923/",
+                    "logo": "/portafolio_pictures/icons/icon_tripod.png",
+                    "image": "/portafolio_pictures/interest_travel_photography.jpg"
+
+                },{
+                    "name": "Pc Gaming",
+                    "description": "Me gusta todo lo relacionado con el mundo del gaming, hardware de PC y tecnología en general.",
+                    "logo": "/portafolio_pictures/icons/icon_game-console.png",
+                    "image": "/portafolio_pictures/interest_setup_gamer.jpg"
                 }
             ]
         }
@@ -847,10 +856,19 @@ export const data = [
                     ]
                 }
             ],
-            "more": [
+            "interests": [
                 {
-                    "name": "",
-                    "description": ""
+                    "name": "Travel and Photography",
+                    "description": "I love to travel and discover new places, as well as capture those moments with my camera or cell phone.",
+                    "url": "https://www.instagram.com/d3v.il.923/",
+                    "image": "/portafolio_pictures/interst_travel_photography.jpg",
+                    "logo": "/portafolio_pictures/icons/icon_tripod.png"
+                },
+                {
+                    "name": "Pc Gaming",
+                    "description": "I like everything related to the gaming world, PC hardware, and technology in general.",
+                    "logo": "/portafolio_pictures/icons/icon_game-console.png",
+                    "image":"/portafolio_pictures/interest_setup_gamer.jpg"
                 }
             ]
         }

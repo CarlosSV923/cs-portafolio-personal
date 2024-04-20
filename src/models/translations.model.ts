@@ -21,7 +21,11 @@ export interface TranslationModel {
     techSkills: string;
     softSkills: string;
     projects: string;
-    more: string;
+    projectOwner: string;
+    repositoryUrl: string;
+    companyUrl: string;
+    interests: string;
+    interesUrl: string;
     about: string;
     contact: string;
     firstName: string;
