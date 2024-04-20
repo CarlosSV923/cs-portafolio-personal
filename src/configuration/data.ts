@@ -429,6 +429,7 @@ export const data = [
                     "name": "Pc Gaming",
                     "description": "Me gusta todo lo relacionado con el mundo del gaming, hardware de PC y tecnología en general.",
                     "logo": "/portafolio_pictures/icons/icon_game-console.png",
+                    "image": "/portafolio_pictures/interest_setup_gamer.jpg"
                 }
             ]
         }
@@ -866,7 +867,8 @@ export const data = [
                 {
                     "name": "Pc Gaming",
                     "description": "I like everything related to the gaming world, PC hardware, and technology in general.",
-                    "logo": "/portafolio_pictures/icons/icon_game-console.png"
+                    "logo": "/portafolio_pictures/icons/icon_game-console.png",
+                    "image":"/portafolio_pictures/interest_setup_gamer.jpg"
                 }
             ]
         }

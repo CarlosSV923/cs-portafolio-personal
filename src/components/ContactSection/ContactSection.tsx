@@ -44,8 +44,8 @@ const ContactSection = () => {
           icon={"/icons/icon_call_white.png"}
           conatactValue={data.contact.phone}
           label="Celular"
-          action={() => window.open(`tel:${data.contact.phone}`)}
-          actionText="Llamar"
+          action={() => window.open(`https://wa.me/${data.contact.phone}`, "_blank"	)}
+          actionText="Escribir mensaje"
           classNameFrontCard="bg-cyan-400"
         />
 
