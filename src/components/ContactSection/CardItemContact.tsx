@@ -1,6 +1,6 @@
 "use client";
 import { useState } from "react";
-
+import { IconsDefault } from "@/configuration/images.icons.default";
 import { Button, Image, Tooltip } from "@nextui-org/react";
 import NextImage from "next/image";
 
@@ -73,7 +73,7 @@ export const CardItemContact = ({
                   >
                     <Image
                       as={NextImage}
-                      src={"/icons/icon_paper-plane_white.png"}
+                      src={IconsDefault.ICON_PAPER_PLANE_WHITE}
                       alt={"Link-" + label}
                       width={24}
                       height={24}
@@ -85,7 +85,11 @@ export const CardItemContact = ({
               </div>
             )}
             <div className="w-full flex justify-center item-center">
-              <Tooltip showArrow={true} content={"Copiar al portapapeles"}>
+              <Tooltip
+                showArrow={true}
+                placement="bottom"
+                content={"Copiar al portapapeles"}
+              >
                 <Button
                   className="w-1/2 bg-cyan-600 border-cyan-600"
                   onClick={() => navigator.clipboard.writeText(conatactValue)}
@@ -93,7 +97,7 @@ export const CardItemContact = ({
                 >
                   <Image
                     as={NextImage}
-                    src={"/icons/icon_copy_white.png"}
+                    src={IconsDefault.ICON_COPY_WHITE}
                     alt={"Copy-" + label}
                     width={24}
                     height={24}

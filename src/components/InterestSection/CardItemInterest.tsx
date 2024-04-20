@@ -10,6 +10,10 @@ import {
   Link,
 } from "@nextui-org/react";
 import NextImage from "next/image";
+import {
+  IconsDefault,
+  ImagesDefault,
+} from "@/configuration/images.icons.default";
 
 export const CardItemInterest = ({ interest }: { interest: Interest }) => {
   const { translations } = useConfig()!;
@@ -25,7 +29,7 @@ export const CardItemInterest = ({ interest }: { interest: Interest }) => {
       <CardHeader className="flex flex-col item-center justify-center gap-2">
         <Image
           as={NextImage}
-          src={interest.logo || "/icons/icon_interest.png"}
+          src={interest.logo || IconsDefault.ICON_INTEREST_CYAN}
           alt={interest.name}
           width={40}
           height={40}
@@ -46,7 +50,7 @@ export const CardItemInterest = ({ interest }: { interest: Interest }) => {
       <CardBody className="flex flex-col justify-center item-center gap-4">
         <Image
           as={NextImage}
-          src={interest.image || "/default_bgProject.png"}
+          src={interest.image || ImagesDefault.IMAGE_BG_PROJECTS}
           alt={interest.name}
           width={550}
           height={800}

@@ -11,6 +11,7 @@ import {
 } from "@nextui-org/react";
 import NextImage from "next/image";
 import { ModalAchievementsAttitudes } from "../Shared/ModalAchievementsAttitudes/ModalAchievementsAttitudes";
+import { IconsDefault } from "@/configuration/images.icons.default";
 
 export const CardItemExperience = ({
   experience,
@@ -29,8 +30,7 @@ export const CardItemExperience = ({
       <CardHeader className="flex item-center flex-col justify-center gap-2">
         <Image
           as={NextImage}
-          src={experience.logo || "/icons/icon_work.png"}
-          fallbackSrc="/icons/icon_work.png"
+          src={experience.logo || IconsDefault.ICON_WORK_CYAN}
           alt={experience.position}
           width={45}
           height={45}

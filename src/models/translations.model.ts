@@ -2,10 +2,14 @@ export interface TranslationModel {
     name: string;
     lastName: string;
     email: string;
+    actionTextEmail: string;
     phone: string;
+    actionTextPhone: string;
     address: string;
     github: string;
+    actionTextGithub: string;
     linkedin: string;
+    actionTextLinkedin: string;
     description: string;
     downloadCV: string;
     experience: string;

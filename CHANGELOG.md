@@ -6,6 +6,11 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 
 # [Released]##
 
+## [1.0.1] - 2024-04-20
+- Fix: Se arreglaron rutas para archivos, imagenes e iconos
+- Add: Se agregaron nuevas traducciones y validaciones para modulo de contacto
+- Update: Se actualizaron paquetes de sus ultimas versiones
+
 ## [1.0.0] - 2024-04-19
 
 - Feat: Se agrega CHANGELOG.md
