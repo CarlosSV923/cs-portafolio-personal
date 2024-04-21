@@ -1,0 +1,59 @@
+{
+    "general": {
+        "name": "Nombre",
+        "lastName": "Apellido",
+        "firstName": "Nombre",
+        "secondName": "Segundo nombre",
+        "firstLastName": "Primer apellido",
+        "secondLastName": "Segundo apellido"
+    },
+    "contact": {
+        "email": "Email",
+        "actionTextEmail": "Enviar correo",
+        "phone": "Whatsapp",
+        "actionTextPhone": "Escribir mensaje",
+        "address": "Dirección",
+        "github": "Github",
+        "actionTextGithub": "Ver perfil",
+        "linkedin": "Linkedin",
+        "actionTextLinkedin": "Ver perfil",
+        "title": "Contacto"
+    },
+    "about": {
+        "title": "Sobre mí",
+        "description": "Descripción",
+        "downloadCV": "Descargar CV"
+    },
+    "experience": {
+        "title": "Experiencia Profesional",
+        "achievements": "Logros",
+        "attitudes": "Actitudes",
+        "location": "Ubicación",
+        "mode": "Modalidad"
+    },
+    "education": {
+        "title": "Formación Académica",
+        "achievements": "Logros",
+        "attitudes": "Actitudes",
+        "intitution": "Institución",
+        "location": "Ubicación",
+        "mode": "Modalidad",
+        "degreeUrl": "Certificado"
+    },
+    "skils": {
+        "title": "Habilidades",
+        "techSkills": "Habilidades Técnicas",
+        "softSkills": "Habilidades Blandas"
+    },
+    "projects": {
+        "title": "Proyectos",
+        "repositoryUrl": "Ver Repositorio",
+        "companyUrl": "Ir a Empresa",
+        "projectOwner": "Propiedad de"
+    },
+    "interests": {
+        "title": "Intereses",
+        "interests": "Intereses",
+        "interestUrl": "Ver Sitio"
+    }
+}

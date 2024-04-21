@@ -1,0 +1,58 @@
+{
+    "general": {
+        "name": "Name",
+        "lastName": "Last Name",
+        "firstName": "First Name",
+        "secondName": "Second Name",
+        "firstLastName": "First Last Name",
+        "secondLastName": "Second Last Name"
+    },
+    "contact": {
+        "email": "Email",
+        "actionTextEmail": "Send email",
+        "phone": "Whatsapp",
+        "actionTextPhone": "Send message",
+        "address": "Address",
+        "github": "Github",
+        "actionTextGithub": "View profile",
+        "linkedin": "Linkedin",
+        "actionTextLinkedin": "View profile",
+        "title": "Contact"
+    },
+    "about": {
+        "title": "About me",
+        "description": "Description",
+        "downloadCV": "Download CV"
+    },
+    "experience": {
+        "title": "Experience",
+        "achievements": "Achievements",
+        "attitudes": "Attitudes",
+        "location": "Location",
+        "mode": "Mode"
+    },
+    "education": {
+        "title": "Education",
+        "achievements": "Achievements",
+        "attitudes": "Attitudes",
+        "intitution": "Intitution",
+        "location": "Location",
+        "mode": "Mode",
+        "degreeUrl": "View Degree"
+    },
+    "skils": {
+        "title": "Skills",
+        "techSkills": "Technical Skills",
+        "softSkills": "Soft Skills"
+    },
+    "projects": {
+        "title": "Projects",
+        "repositoryUrl": "Go to Repository",
+        "companyUrl": "Go to Company",
+        "projectOwner": "Project Owner"
+    },
+    "interests": {
+        "title": "Interests",
+        "interestUrl": "Go to Interest"
+    }
+}

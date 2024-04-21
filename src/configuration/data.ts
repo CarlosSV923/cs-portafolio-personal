@@ -1,7 +1,7 @@
 export const data = [
     {
-        language: "es",
-        data: {
+        "language": "es",
+        "data": {
             "general": {
                 "firstName": "Carlos",
                 "secondName": "Anthony",
@@ -54,7 +54,7 @@ export const data = [
             ],
             "experience": [
                 {
-                    position: "Ayudante de Laboratorio de Computación",
+                    "position": "Ayudante de Laboratorio de Computación",
                     "company": "Escuela Superior Politécnica del Litoral - ESPOL",
                     "dateFrom": "05/2018",
                     "dateTo": "10/2018",
@@ -63,7 +63,7 @@ export const data = [
                         "Realización el mantenimiento básico de los equipos computacionales.",
                         "Supervisión el acceso a los recursos tecnológicos de la institución.",
                     ],
-                    attitudes: [
+                    "attitudes": [
                         {
                             "name": "Mantenimiento informático",
                             "logo": ""
@@ -77,12 +77,12 @@ export const data = [
                             "logo": ""
                         }
                     ],
-                    mode: "Presencial",
-                    location: "Guayaquil, Ecuador",
-                    time: "Contrato temporal",
+                    "mode": "Presencial",
+                    "location": "Guayaquil, Ecuador",
+                    "time": "Contrato temporal",
                 },
                 {
-                    position: "Pasante de Desarrollo de Software",
+                    "position": "Pasante de Desarrollo de Software",
                     "company": "BlackBoxEc",
                     "dateFrom": "06/2019",
                     "dateTo": "12/2019",
@@ -92,7 +92,7 @@ export const data = [
                         "Mejoras y correcciones en aplicaciones web utilizando tecnologías ASP.NET",
                         "Desarrollo de aplicación de escritorio para procesamiento de documentos Excel.",
                     ],
-                    attitudes: [
+                    "attitudes": [
                         {
                             "name": "C#",
                             "logo": "/icons/personalized/icon_csharp.png"
@@ -122,21 +122,21 @@ export const data = [
                             "logo": ""
                         },
                     ],
-                    mode: "Presencial",
-                    location: "Guayaquil, Ecuador",
-                    time: "Contrato de prácticas",
+                    "mode": "Presencial",
+                    "location": "Guayaquil, Ecuador",
+                    "time": "Contrato de prácticas",
                 },
                 {
-                    position: "Ayudante de Docencia en Base de Datos",
+                    "position": "Ayudante de Docencia en Base de Datos",
                     "company": "Escuela Superior Politécnica del Litoral - ESPOL",
                     "dateFrom": "05/2019",
                     "dateTo": "10/2019",
-                    achievements: [
+                    "achievements": [
                         "Revisión de talleres y tareas asignadas a los estudiantes.",
                         "Impartir clases de ayuda y ejercicios prácticos.",
                         "Proporcionar retroalimentación a los estudiantes.",
                     ],
-                    attitudes: [
+                    "attitudes": [
                         {
                             "name": "MySQL",
                             "logo": "/images/personalized/icons/icon_database.png"
@@ -147,12 +147,12 @@ export const data = [
                         },
 
                     ],
-                    mode: "Presencial",
-                    location: "Guayaquil, Ecuador",
-                    time: "Contrato temporal",
+                    "mode": "Presencial",
+                    "location": "Guayaquil, Ecuador",
+                    "time": "Contrato temporal",
                 },
                 {
-                    position: "Full Stack Developer",
+                    "position": "Full Stack Developer",
                     "company": "Contifico S.A.",
                     "dateFrom": "06/2020",
                     "dateTo": "09/2020",
@@ -160,7 +160,7 @@ export const data = [
                         "Mantenimiento de aplicación web, corrigiendo errores y agregando nuevas funcionalidades.",
                         "Gestión de la base de datos MySQL utilizada por la aplicación web.",
                     ],
-                    attitudes: [
+                    "attitudes": [
                         {
                             "name": "Python",
                             "logo": "/icons/personalized/icon_python.png"
@@ -182,12 +182,12 @@ export const data = [
                             "logo": ""
                         }
                     ],
-                    mode: "Remoto",
-                    location: "Guayaquil, Ecuador",
-                    time: "Jornada Completa",
+                    "mode": "Remoto",
+                    "location": "Guayaquil, Ecuador",
+                    "time": "Jornada Completa",
                 },
                 {
-                    position: "Sr. Full Stack Developer",
+                    "position": "Sr. Full Stack Developer",
                     "company": "SIIGO S.A.",
                     "dateFrom": "09/2020",
                     "dateTo": "Actualidad",
@@ -198,7 +198,7 @@ export const data = [
                         "Administración de bases de datos NoSQL utilizando MongoDB.",
                         "Implementación de servicios GraphQL en microservicios Node.js.",
                     ],
-                    attitudes: [
+                    "attitudes": [
                         {
                             "name": "Javascript",
                             "logo": "/icons/personalized/icon_js.png"
@@ -248,110 +248,110 @@ export const data = [
                             "logo": ""
                         },
                     ],
-                    mode: "Remoto",
-                    location: "Colombia",
-                    time: "Jornada Completa",
+                    "mode": "Remoto",
+                    "location": "Colombia",
+                    "time": "Jornada Completa",
                 }
             ],
             "skills": {
-                tech: [
+                "tech": [
                     {
                         "name": "Node.js",
-                        percentage: 75,
+                        "percentage": 75,
                     },
                     {
-                        name: "React.js",
-                        percentage: 70,
+                        "name": "React.js",
+                        "percentage": 70,
                     },
                     {
-                        name: "Typescript",
-                        percentage: 70,
+                        "name": "Typescript",
+                        "percentage": 70,
                     },
                     {
-                        name: "MongoDB",
-                        percentage: 60,
+                        "name": "MongoDB",
+                        "percentage": 60,
                     },
                     {
-                        name: "Docker",
-                        percentage: 60,
+                        "name": "Docker",
+                        "percentage": 60,
                     },
                     {
-                        name: "C#",
-                        percentage: 65,
+                        "name": "C#",
+                        "percentage": 65,
                     },
                     {
-                        name: ".NET Core",
-                        percentage: 65,
+                        "name": ".NET Core",
+                        "percentage": 65,
                     },
                     {
-                        name: "Azure Functions",
-                        percentage: 70,
+                        "name": "Azure Functions",
+                        "percentage": 70,
                     },
                     {
-                        name: "GraphQL",
-                        percentage: 65,
+                        "name": "GraphQL",
+                        "percentage": 65,
                     },
                     {
-                        name: "Python",
-                        percentage: 50,
+                        "name": "Python",
+                        "percentage": 50,
                     },
                     {
-                        name: "MySQL",
-                        percentage: 65,
+                        "name": "MySQL",
+                        "percentage": 65,
                     },
                     {
-                        name: "AngularJS",
-                        percentage: 55,
+                        "name": "AngularJS",
+                        "percentage": 55,
                     },
                     {
-                        name: "PostgreSQL",
-                        percentage: 60,
+                        "name": "PostgreSQL",
+                        "percentage": 60,
                     },
                     {
-                        name: "NestJS",
-                        percentage: 70,
+                        "name": "NestJS",
+                        "percentage": 70,
                     },
                     {
-                        name: "Kafka",
-                        percentage: 60,
+                        "name": "Kafka",
+                        "percentage": 60,
                     },
                     {
-                        name: "Ingles",
-                        percentage: 45,
+                        "name": "Ingles",
+                        "percentage": 45,
                     },
                 ],
-                soft: [
+                "soft": [
                     {
                         "name": "Trabajo en equipo",
-                        percentage: 80,
+                        "percentage": 80,
                     },
                     {
-                        name: "Comunicación",
-                        percentage: 75,
+                        "name": "Comunicación",
+                        "percentage": 75,
                     },
                     {
-                        name: "Responsabilidad",
-                        percentage: 85,
+                        "name": "Responsabilidad",
+                        "percentage": 85,
                     },
                     {
-                        name: "Proactividad",
-                        percentage: 80,
+                        "name": "Proactividad",
+                        "percentage": 80,
                     },
                     {
-                        name: "Adaptabilidad",
-                        percentage: 75,
+                        "name": "Adaptabilidad",
+                        "percentage": 75,
                     },
                     {
-                        name: "Resolución de problemas",
-                        percentage: 85,
+                        "name": "Resolución de problemas",
+                        "percentage": 85,
                     },
                     {
-                        name: "Creatividad",
-                        percentage: 70,
+                        "name": "Creatividad",
+                        "percentage": 70,
                     },
                     {
-                        name: "Empatía",
-                        percentage: 80,
+                        "name": "Empatía",
+                        "percentage": 80,
                     }
                 ]
             },
@@ -435,8 +435,8 @@ export const data = [
         }
     },
     {
-        language: "en",
-        data: {
+        "language": "en",
+        "data": {
             "general": {
                 "firstName": "Carlos",
                 "secondName": "Anthony",
@@ -691,109 +691,104 @@ export const data = [
             ],
 
             "skills": {
-                tech: [
+                "tech": [
                     {
                         "name": "Node.js",
-                        percentage: 75,
+                        "percentage": 75,
                     },
                     {
-                        name: "React.js",
-                        percentage: 70,
+                        "name": "React.js",
+                        "percentage": 70,
                     },
                     {
-                        name: "Typescript",
-                        percentage: 70,
+                        "name": "Typescript",
+                        "percentage": 70,
                     },
                     {
-                        name: "MongoDB",
-                        percentage: 60,
+                        "name": "MongoDB",
+                        "percentage": 60,
                     },
                     {
-                        name: "Docker",
-                        percentage: 60,
+                        "name": "Docker",
+                        "percentage": 60,
                     },
                     {
-                        name: "C#",
-                        percentage: 65,
+                        "name": "C#",
+                        "percentage": 65,
                     },
                     {
-                        name: ".NET Core",
-                        percentage: 65,
+                        "name": ".NET Core",
+                        "percentage": 65,
                     },
                     {
-                        name: "Azure Functions",
-                        percentage: 70,
+                        "name": "Azure Functions",
+                        "percentage": 70,
                     },
                     {
-                        name: "GraphQL",
-                        percentage: 65,
+                        "name": "GraphQL",
+                        "percentage": 65,
                     },
                     {
-                        name: "Python",
-                        percentage: 50,
+                        "name": "Python",
+                        "percentage": 50,
                     },
                     {
-                        name: "MySQL",
-                        percentage: 65,
+                        "name": "MySQL",
+                        "percentage": 65,
                     },
                     {
-                        name: "CSS",
-                        percentage: 75,
+                        "name": "AngularJS",
+                        "percentage": 55,
                     },
                     {
-                        name: "AngularJS",
-                        percentage: 55,
+                        "name": "PostgreSQL",
+                        "percentage": 60,
                     },
                     {
-                        name: "PostgreSQL",
-                        percentage: 60,
+                        "name": "NestJS",
+                        "percentage": 70,
                     },
                     {
-                        name: "NestJS",
-                        percentage: 70,
+                        "name": "Kafka",
+                        "percentage": 60,
                     },
                     {
-                        name: "Kafka",
-                        percentage: 60,
+                        "name": "Ingles",
+                        "percentage": 45,
                     },
-                    {
-                        name: "English",
-                        percentage: 45,
-                    },
-
                 ],
-                soft: [
+                "soft": [
                     {
                         "name": "Teamwork",
-                        percentage: 80,
+                        "percentage": 80,
                     },
                     {
-                        name: "Communication",
-                        percentage: 75,
+                        "name": "Communication",
+                        "percentage": 75,
                     },
                     {
-                        name: "Responsibility",
-                        percentage: 85,
+                        "name": "Responsibility",
+                        "percentage": 85,
                     },
                     {
-                        name: "Proactivity",
-                        percentage: 80,
+                        "name": "Proactivity",
+                        "percentage": 80,
                     },
                     {
-                        name: "Adaptability",
-                        percentage: 75,
+                        "name": "Adaptability",
+                        "percentage": 75,
                     },
                     {
-                        name: "Problem Solving",
-                        percentage: 85,
+                        "name": "Problem Solving",
+                        "percentage": 85,
                     },
                     {
-                        name: "Creativity",
-                        percentage: 70,
+                        "name": "Creativity",
+                        "percentage": 70,
                     },
                     {
-                        name: "Empathy",
-                        percentage: 80,
+                        "name": "Empathy",
+                        "percentage": 80,
                     }
                 ]
             },
