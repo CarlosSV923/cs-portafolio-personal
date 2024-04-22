@@ -8,10 +8,8 @@ import {
   useMemo,
   useState,
 } from "react";
-import { data } from "../configuration/data";
 import { PortafolioContextModel } from "@/models/portafolio.context.model";
 import { DataModel } from "@/models/data.model";
-import { LANGUAGE_ES } from "@/configuration/language";
 
 export const PortafolioContext = createContext<PortafolioContextModel | null>(
   null
@@ -28,14 +26,6 @@ export const PortafolioProvider = ({
   children: React.ReactNode;
   locale: string;
 }) => {
-  const setJsonData = () => {
-    import(`../configuration/data/${locale}.json`).then((data: any) => {
-      setData(data.default);
-      setIsLoading(false);
-      console.log(data?.default, "data");
-    });
-  };
-
   const [isLoading, setIsLoading] = useState<boolean>(true);
   const [language, setLanguage] = useState<string>(locale);
   const [data, setData] = useState<DataModel | null>(null);
@@ -66,8 +56,13 @@ export const PortafolioProvider = ({
   );
 
   useEffect(() => {
-    setJsonData();
-  }, []);
+    import(`../configuration/data/${locale}.json`).then((data: any) => {
+      setData(data.default);
+      setTimeout(() => {
+        setIsLoading(false);
+      }, 1200);
+    });
+  }, [locale]);
 
   return (
     <PortafolioContext.Provider value={contextValue}>

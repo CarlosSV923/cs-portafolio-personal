@@ -1,4 +1,7 @@
 {
+    "loader": {
+        "loading": "Cargando..."
+    },
     "navbar": {
         "about": "Sobre mí",
         "experience": "Experiencia",
