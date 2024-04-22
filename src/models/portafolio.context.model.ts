@@ -1,11 +1,10 @@
 import { DataModel } from "./data.model";
-import { TranslationModel } from "./translations.model";
 
 export interface PortafolioContextModel {
-    data: DataModel;
+    isLoading: boolean;
+    setIsLoading: (loading: boolean) => void;
+    data: DataModel | null;
     setData: (data: DataModel) => void;
-    translations: TranslationModel;
-    setTranslations: (translations: TranslationModel) => void;
     language: string;
     setLanguage: (languaje: string) => void;
     sectionSelected: string;

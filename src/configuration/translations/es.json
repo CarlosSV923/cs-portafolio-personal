@@ -1,4 +1,13 @@
 {
+    "navbar": {
+        "about": "Sobre mí",
+        "experience": "Experiencia",
+        "education": "Educación",
+        "skills": "Habilidades",
+        "projects": "Proyectos",
+        "interests": "Intereses",
+        "contact": "Contacto"
+    },
     "general": {
         "name": "Nombre",
         "lastName": "Apellido",
@@ -17,7 +26,8 @@
         "actionTextGithub": "Ver perfil",
         "linkedin": "Linkedin",
         "actionTextLinkedin": "Ver perfil",
-        "title": "Contacto"
+        "title": "Contacto",
+        "copyToClipboard": "Copiar al portapapeles"
     },
     "about": {
         "title": "Sobre mí",
@@ -40,7 +50,7 @@
         "mode": "Modalidad",
         "degreeUrl": "Certificado"
     },
-    "skils": {
+    "skills": {
         "title": "Habilidades",
         "techSkills": "Habilidades Técnicas",
         "softSkills": "Habilidades Blandas"
@@ -53,7 +63,6 @@
     },
     "interests": {
         "title": "Intereses",
-        "interests": "Intereses",
         "interestUrl": "Ver Sitio"
     }
 }

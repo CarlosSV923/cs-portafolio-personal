@@ -23,5 +23,5 @@ export const IconsDefault = {
 
 const ImagesDefaultPath = "/images/default/";
 export const ImagesDefault = {
-    IMAGE_BG_PROJECTS: `${ImagesDefaultPath}default_bgProjects.png`,
+    IMAGE_BG_PROJECTS: `${ImagesDefaultPath}default_bgProject.png`,
 }

@@ -3,6 +3,7 @@ import { useState } from "react";
 import { IconsDefault } from "@/configuration/images.icons.default";
 import { Button, Image, Tooltip } from "@nextui-org/react";
 import NextImage from "next/image";
+import { useTranslations } from "next-intl";
 
 export const CardItemContact = ({
   icon,
@@ -24,6 +25,7 @@ export const CardItemContact = ({
   const toggleCard = () => {
     setIsFlipped(!isFlipped);
   };
+  const translations = useTranslations("contact");
 
   return (
     <div
@@ -88,7 +90,7 @@ export const CardItemContact = ({
               <Tooltip
                 showArrow={true}
                 placement="bottom"
-                content={"Copiar al portapapeles"}
+                content={translations("copyToClipboard")}
               >
                 <Button
                   className="w-1/2 bg-cyan-600 border-cyan-600"

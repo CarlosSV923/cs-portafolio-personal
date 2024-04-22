@@ -442,9 +442,9 @@ export const data = [
                 "secondName": "Anthony",
                 "firstLastName": "Sesme",
                 "secondLastName": "Vera",
-                "navbarPicture": "portafolio_pictures/navbar_picture.jpg",
-                "avatarPicture": "portafolio_pictures/avatar_picture.jpg",
-                "backgroundPicture": "portafolio_pictures/background_picture.jpg",
+                "navbarPicture": "/images/personalized/navbar_picture.jpg",
+                "avatarPicture": "/images/personalized/avatar_picture.jpg",
+                "backgroundPicture": "/images/personalized/background_picture.jpg",
                 "profession": "Software Developer",
                 "navbarText": "CS"
             },
@@ -456,9 +456,9 @@ export const data = [
                 "linkedin": "https://www.linkedin.com/in/carlos-sesme-vera-342769172/",
             },
             "about": {
-                "aboutPicture": "portafolio_pictures/about_picture.jpg",
+                "aboutPicture": "/images/personalized/about_picture.jpg",
                 "description": "Software Engineer with four years of professional experience, competent and passionate about technology. My solid academic background is complemented by ongoing learning of the latest technological trends. I have extensive experience in web development, system design, and project management. I possess outstanding problem-solving skills, proposing innovative, robust, and scalable solutions to technological challenges. My communication, teamwork, and responsibility skills enable me to collaborate effectively in dynamic and challenging work environments.",
-                "urlCurriculum": "files/cv.pdf",
+                "urlCurriculum": "/files/cv.pdf",
             },
             "education": [
                 {
@@ -856,7 +856,7 @@ export const data = [
                     "name": "Travel and Photography",
                     "description": "I love to travel and discover new places, as well as capture those moments with my camera or cell phone.",
                     "url": "https://www.instagram.com/d3v.il.923/",
-                    "image": "/images/personalized/interst_travel_photography.jpg",
+                    "image": "/images/personalized/interest_travel_photography.jpg",
                     "logo": "/icons/personalized/icon_tripod.png"
                 },
                 {

@@ -1,24 +1,32 @@
 "use client";
 import React from "react";
+import { useTranslations } from "next-intl";
 import {
   Navbar,
   NavbarBrand,
   NavbarContent,
   NavbarItem,
   Link,
-  NavbarMenuToggle,
-  NavbarMenu,
-  NavbarMenuItem,
   Avatar,
 } from "@nextui-org/react";
 import { useConfig } from "@/contexts/portafolio.context";
-import { order } from "@/configuration/order";
 
 const NavBar = () => {
   const [isMenuOpen, setIsMenuOpen] = React.useState<boolean>(false);
 
-  const { data, translations, sectionSelected, setSectionSelected } =
-    useConfig()!;
+  const { data, sectionSelected, setSectionSelected } = useConfig()!;
+
+  const translations = useTranslations("navbar");
+
+  const options = [
+    "about",
+    "education",
+    "experience",
+    "skills",
+    "projects",
+    "interests",
+    "contact",
+  ];
 
   return (
     <Navbar
@@ -29,16 +37,12 @@ const NavBar = () => {
       isBlurred={false}
     >
       <NavbarContent justify="start">
-        {/* <NavbarMenuToggle
-          aria-label={isMenuOpen ? "Close menu" : "Open menu"}
-          className="xl:hidden text-white"
-        /> */}
         <NavbarBrand>
           <Link href="#home" onClick={() => setSectionSelected("home")}>
             <div className="flex gap-4 items-center justify-center ">
-              <Avatar size="sm" src={data.general?.navbarPicture} />
+              <Avatar size="sm" src={data?.general?.navbarPicture} />
               <div className="flex">
-                {data.general.navbarText?.split("").map((item, index) => (
+                {data?.general.navbarText?.split("").map((item, index) => (
                   <p
                     key={`${index}-${item}-navbar-brand`}
                     className={`font-bold ${
@@ -54,10 +58,9 @@ const NavBar = () => {
         </NavbarBrand>
       </NavbarContent>
       <NavbarContent className="hidden xl:flex gap-4" justify="end">
-        {order.map(
+        {options.map(
           (item, index) =>
-            translations[item as keyof typeof translations] &&
-            data[item as keyof typeof data] && (
+            (data && data[item as keyof typeof data]) && (
               <NavbarItem key={`${index}-${item}-navbar-item`}>
                 <Link
                   onClick={() => setSectionSelected(item)}
@@ -66,32 +69,12 @@ const NavBar = () => {
                   }`}
                   href={`#${item}`}
                 >
-                  {translations[item as keyof typeof translations]}
+                  {translations(item)}
                 </Link>
               </NavbarItem>
             )
         )}
       </NavbarContent>
-      {/* <NavbarMenu className="bg-black opacity-65 gap-4">
-        {order.map(
-          (item, index) =>
-            translations[item as keyof typeof translations] &&
-            data[item as keyof typeof data] && (
-              <NavbarMenuItem key={`${index}-${item}-navbar-menu-item`}>
-                <Link
-                  onClick={() => setSectionSelected(item)}
-                  className={
-                    sectionSelected === item ? "text-cyan-400" : "text-white"
-                  }
-                  href={`#${item}`}
-                  size="lg"
-                >
-                  {translations[item as keyof typeof translations]}
-                </Link>
-              </NavbarMenuItem>
-            )
-        )}
-      </NavbarMenu> */}
     </Navbar>
   );
 };

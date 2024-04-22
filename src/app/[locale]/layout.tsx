@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { Montserrat } from "next/font/google";
-
+import { NextIntlClientProvider, useMessages } from "next-intl";
 import { NextUIGlobalProvider } from "../nextUI.global.provider";
 import { PortafolioProvider } from "../../contexts/portafolio.context";
 import { IconsDefault } from "../../configuration/images.icons.default";
@@ -26,12 +26,16 @@ export default function RootLayout({
   children: React.ReactNode;
   params: { locale: string };
 }>) {
+  const messages = useMessages();
+
   return (
     <html lang={locale}>
       <body className={montserrat.className}>
-        <NextUIGlobalProvider>
-          <PortafolioProvider>{children}</PortafolioProvider>
-        </NextUIGlobalProvider>
+        <NextIntlClientProvider messages={messages} locale={locale}>
+          <NextUIGlobalProvider>
+            <PortafolioProvider locale={locale}>{children}</PortafolioProvider>
+          </NextUIGlobalProvider>
+        </NextIntlClientProvider>
       </body>
     </html>
   );

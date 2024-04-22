@@ -1,4 +1,13 @@
 {
+    "navbar": {
+        "about": "About me",
+        "experience": "Experience",
+        "education": "Education",
+        "skills": "Skills",
+        "projects": "Projects",
+        "interests": "Interests",
+        "contact": "Contact"
+    },
     "general": {
         "name": "Name",
         "lastName": "Last Name",
@@ -17,7 +26,8 @@
         "actionTextGithub": "View profile",
         "linkedin": "Linkedin",
         "actionTextLinkedin": "View profile",
-        "title": "Contact"
+        "title": "Contact",
+        "copyToClipboard": "Copy to clipboard"
     },
     "about": {
         "title": "About me",
@@ -40,7 +50,7 @@
         "mode": "Mode",
         "degreeUrl": "View Degree"
     },
-    "skils": {
+    "skills": {
         "title": "Skills",
         "techSkills": "Technical Skills",
         "softSkills": "Soft Skills"

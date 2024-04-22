@@ -10,12 +10,11 @@ import {
 import NextImage from "next/image";
 import { ButtonRedirect } from "./ButtonRedirect";
 import { TechAttitudeList } from "../Shared/TechAttitudeList/TechAttitudeList";
-import { useConfig } from "@/contexts/portafolio.context";
 import { ImagesDefault } from "@/configuration/images.icons.default";
+import { useTranslations } from "next-intl";
 
 export const CardItemProject = ({ project }: { project: Project }) => {
-  const { translations } = useConfig()!;
-
+  const translations = useTranslations("projects");
   return (
     <Card
       shadow="sm"
@@ -26,7 +25,6 @@ export const CardItemProject = ({ project }: { project: Project }) => {
         <Image
           as={NextImage}
           src={project.backgroundPicture || ImagesDefault.IMAGE_BG_PROJECTS}
-          fallbackSrc="/default_bgProject.png"
           alt={project.name}
           width={350}
           height={500}
@@ -39,7 +37,7 @@ export const CardItemProject = ({ project }: { project: Project }) => {
           )}
           {project.owner && project.typeOwner && (
             <p className="text-white text-md">
-              {translations.projectOwner}: {project.owner}{" "}
+              {translations("projectOwner")}: {project.owner}{" "}
               {`(${project.typeOwner})`}
             </p>
           )}
@@ -58,13 +56,13 @@ export const CardItemProject = ({ project }: { project: Project }) => {
         {project.repositoryUrl && (
           <ButtonRedirect
             url={project.repositoryUrl}
-            label={translations.repositoryUrl}
+            label={translations("repositoryUrl")}
           />
         )}
         {project.companyUrl && (
           <ButtonRedirect
             url={project.companyUrl}
-            label={translations.companyUrl}
+            label={translations("companyUrl")}
           />
         )}
       </CardFooter>
