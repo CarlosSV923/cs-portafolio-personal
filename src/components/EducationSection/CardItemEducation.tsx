@@ -1,5 +1,5 @@
 "use client";
-import { useConfig } from "@/contexts/portafolio.context";
+import { useTranslations } from "next-intl";
 import { ExperienceModel } from "@/models/data.model";
 import {
   Button,
@@ -20,8 +20,9 @@ export const CardItemEducation = ({
 }: {
   education: ExperienceModel;
 }) => {
-  const { translations } = useConfig()!;
+  const translations = useTranslations("education");
   const { isOpen, onOpen, onOpenChange } = useDisclosure();
+  const labelButton = `${education.achievements && translations("achievements")}${education.achievements && education.attitudes ? " - " : " "}${education.attitudes && translations("attitudes")}`;
   return (
     <Card
       shadow="sm"
@@ -63,19 +64,19 @@ export const CardItemEducation = ({
       <CardBody className="flex flex-col gap-2">
         {education.institution && (
           <div className="flex flex-col md:flex-row gap-2">
-            <p className="text-cyan-400 text-md">{translations.intitution}:</p>
+            <p className="text-cyan-400 text-md">{translations("intitution")}:</p>
             <p className="text-white text-md">{education.institution}</p>
           </div>
         )}
         {education.location && (
           <div className="flex flex-col md:flex-row gap-2">
-            <p className="text-cyan-400 text-md">{translations.location}:</p>
+            <p className="text-cyan-400 text-md">{translations("location")}:</p>
             <p className="text-white text-md">{education.location}</p>
           </div>
         )}
         {education.mode && (
           <div className="flex flex-col md:flex-row gap-2">
-            <p className="text-cyan-400 text-md">{translations.mode}:</p>
+            <p className="text-cyan-400 text-md">{translations("mode")}:</p>
             <p className="text-white text-md">{education.mode}</p>
           </div>
         )}
@@ -93,7 +94,7 @@ export const CardItemEducation = ({
               showAnchorIcon
               href={education.url}
             >
-              {translations.degreeUrl}
+              {translations("degreeUrl")}
             </Link>
           )}
           {(Boolean(education.achievements?.length) ||
@@ -105,12 +106,11 @@ export const CardItemEducation = ({
                 className="rounded-2xl text-white text-md border-white hover:border-cyan-400 hover:bg-cyan-400 hover:text-black"
                 onClick={onOpen}
               >
-                {education.achievements && translations.achievements}
-                {education.achievements && education.attitudes ? " y " : " "}
-                {education.attitudes && translations.attitudes}
+                {labelButton}
               </Button>
 
               <ModalAchievementsAttitudes
+                title={labelButton}
                 isOpen={isOpen}
                 onOpenChange={onOpenChange}
                 achievements={education.achievements}

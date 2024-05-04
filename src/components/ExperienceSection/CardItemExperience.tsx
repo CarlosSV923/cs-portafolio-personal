@@ -1,4 +1,4 @@
-import { useConfig } from "@/contexts/portafolio.context";
+import { useTranslations } from "next-intl";
 import { ExperienceModel } from "@/models/data.model";
 import {
   Card,
@@ -18,8 +18,9 @@ export const CardItemExperience = ({
 }: {
   experience: ExperienceModel;
 }) => {
-  const { translations } = useConfig()!;
+  const translations = useTranslations("experience");
   const { isOpen, onOpen, onOpenChange } = useDisclosure();
+  const labelButton = `${experience.achievements && translations("achievements")}${experience.achievements && experience.attitudes ? " - " : " "}${experience.attitudes && translations("attitudes")}`;
 
   return (
     <Card
@@ -82,11 +83,10 @@ export const CardItemExperience = ({
             className="rounded-2xl text-white text-md border-white hover:border-cyan-400 hover:bg-cyan-400 hover:text-black"
             onClick={onOpen}
           >
-            {experience.achievements && translations.achievements}
-            {experience.achievements && experience.attitudes ? " y " : " "}
-            {experience.attitudes && translations.attitudes}
+            {labelButton}
           </Button>
           <ModalAchievementsAttitudes
+            title={labelButton}
             isOpen={isOpen}
             onOpenChange={onOpenChange}
             achievements={experience.achievements}

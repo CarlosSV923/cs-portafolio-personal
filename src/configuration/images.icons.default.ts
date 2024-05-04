@@ -17,11 +17,15 @@ export const IconsDefault = {
     ICON_INTEREST_CYAN: `${IconsDefaultPath}icon_interest_cyan.png`,
     ICON_PAPER_PLANE_WHITE: `${IconsDefaultPath}icon_paper-plane_white.png`,
     ICON_RIGHT_ARROW_CYAN: `${IconsDefaultPath}icon_right-arrow_cyan.png`,
+    ICON_LEFT_ARROW_CYAN: `${IconsDefaultPath}icon_left-arrow_cyan.png`,
     ICON_SCHOOL_CYAN: `${IconsDefaultPath}icon_school_cyan.png`,
     ICON_WORK_CYAN: `${IconsDefaultPath}icon_work_cyan.png`,
+    ICON_ECUADOR_FLAG: `${IconsDefaultPath}icon_ecuador_flag.png`,
+    ICON_USA_FLAG: `${IconsDefaultPath}icon_usa_flag.png`,
+    ICON_LANGUAGE: `${IconsDefaultPath}icon_language.png`,
 }
 
 const ImagesDefaultPath = "/images/default/";
 export const ImagesDefault = {
-    IMAGE_BG_PROJECTS: `${ImagesDefaultPath}default_bgProjects.png`,
+    IMAGE_BG_PROJECTS: `${ImagesDefaultPath}default_bgProject.png`,
 }

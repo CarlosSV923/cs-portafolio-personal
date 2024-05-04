@@ -16,6 +16,7 @@ import { TechAttitudeList } from "../TechAttitudeList/TechAttitudeList";
 
 export const ModalAchievementsAttitudes = ({
   isOpen,
+  title,
   onOpenChange,
   achievements,
   style,
@@ -23,13 +24,14 @@ export const ModalAchievementsAttitudes = ({
   attitudes,
 }: {
   isOpen: boolean;
+  title: string;
   onOpenChange: (isOpen: boolean) => void;
   achievements?: string[] | string;
   attitudes?: TechAttitude[];
   style?: CSSProperties;
   className?: string;
+  
 }) => {
-  const { translations } = useConfig()!;
   return (
     <Modal
       style={style}
@@ -43,9 +45,7 @@ export const ModalAchievementsAttitudes = ({
         {(onClose) => (
           <>
             <ModalHeader className="text-cyan-400 font-bold">
-              {achievements && translations.achievements}
-              {achievements && attitudes ? " y " : " "}
-              {attitudes && translations.attitudes}
+              {title}
             </ModalHeader>
             <ModalBody className="flex flex-col gap-2">
               {achievements && <AchievementList achievements={achievements} />}

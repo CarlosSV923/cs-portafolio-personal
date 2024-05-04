@@ -1,5 +1,4 @@
 "use client";
-import { useConfig } from "@/contexts/portafolio.context";
 import { Interest } from "@/models/data.model";
 import {
   Card,
@@ -14,9 +13,10 @@ import {
   IconsDefault,
   ImagesDefault,
 } from "@/configuration/images.icons.default";
+import { useTranslations } from "next-intl";
 
 export const CardItemInterest = ({ interest }: { interest: Interest }) => {
-  const { translations } = useConfig()!;
+  const translations = useTranslations("interests");
   return (
     <Card
       shadow="sm"
@@ -66,7 +66,7 @@ export const CardItemInterest = ({ interest }: { interest: Interest }) => {
             showAnchorIcon
             href={interest.url}
           >
-            {translations.interesUrl}
+            {translations("interestUrl")}
           </Link>
         </CardFooter>
       )}
