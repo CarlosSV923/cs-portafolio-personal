@@ -5,14 +5,14 @@ import EducationSection from "@/components/EducationSection/EducationSection";
 import ExperienceSection from "@/components/ExperienceSection/ExperienceSection";
 import GeneralSection from "@/components/GeneralSection/GeneralSection";
 import InterestSection from "@/components/InterestSection/InterestSection";
-import { Loader } from "@/components/Loader/Loader";
+import Loader from "@/components/Loader/Loader";
 import NavBar from "@/components/NavBar/NavBar";
 import ProjectSection from "@/components/ProjectSection/ProjectSection";
 import SkillSection from "@/components/SkillSection/SkillSection";
 import { useConfig } from "@/contexts/portafolio.context";
 
 export default function HomePage() {
-  const { data, isLoading } = useConfig()!;
+  const { isLoading } = useConfig()!;
 
   return (
     <>
@@ -23,11 +23,11 @@ export default function HomePage() {
           <NavBar />
           <GeneralSection />
           <AboutSection />
-          <SkillSection />
-          <ExperienceSection />
           <EducationSection />
-          <InterestSection />
+          <ExperienceSection />
+          <SkillSection />
           <ProjectSection />
+          <InterestSection />
           <ContactSection />
         </>
       )}

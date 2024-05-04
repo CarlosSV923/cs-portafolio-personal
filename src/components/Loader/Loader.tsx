@@ -2,7 +2,7 @@
 import { useTranslations } from "next-intl";
 import { CircularProgress } from "@nextui-org/react";
 
-export const Loader = () => {
+const Loader = () => {
   const translations = useTranslations("loader");
   return (
     <div className="flex flex-col gap-8 justify-center item-center w-screnn h-screen bg-[#1A1A2E]">
@@ -24,3 +24,5 @@ export const Loader = () => {
     </div>
   );
 };
+
+export default Loader;

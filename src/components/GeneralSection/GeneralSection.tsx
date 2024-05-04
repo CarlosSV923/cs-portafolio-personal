@@ -6,6 +6,7 @@ import { useEffect, useState } from "react";
 import { AccessButton } from "./AccessButton";
 import { IconsDefault } from "@/configuration/images.icons.default";
 import { useTranslations } from "next-intl";
+import SelectorLanguage from "../SelectorLanguage/SelectorLanguage";
 
 const GeneralSection = () => {
   const { data } = useConfig()!;
@@ -71,6 +72,9 @@ const GeneralSection = () => {
         </div>
       </div>
       <div className="flex justify-between w-full p-2 md:p-4 lg:p-6 xl:p-8 z-20 absolute bottom-0">
+        <div className="w-1/4 md:hidden">
+          <SelectorLanguage />
+        </div>
         <div className="flex gap-4 ">
           {data?.contact?.github && (
             <AccessButton
@@ -93,15 +97,6 @@ const GeneralSection = () => {
             />
           )}
         </div>
-        {/* <div>
-          <AccessButton
-            height={23}
-            href={`#${order[order.length - 1]}`}
-            srcImg="/icons/icon_arrow-down_cyan.png"
-            text="Bajar"
-            width={23}
-          />
-        </div> */}
       </div>
     </div>
   );

@@ -1,4 +1,7 @@
 {
+    "selectorLanguage": {
+        "placeholder": "Idioma"
+    },
     "loader": {
         "loading": "Cargando..."
     },

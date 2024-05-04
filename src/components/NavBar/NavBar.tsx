@@ -9,11 +9,11 @@ import {
   Link,
   Avatar,
 } from "@nextui-org/react";
+
 import { useConfig } from "@/contexts/portafolio.context";
+import SelectorLanguage from "../SelectorLanguage/SelectorLanguage";
 
 const NavBar = () => {
-  const [isMenuOpen, setIsMenuOpen] = React.useState<boolean>(false);
-
   const { data, sectionSelected, setSectionSelected } = useConfig()!;
 
   const translations = useTranslations("navbar");
@@ -31,8 +31,6 @@ const NavBar = () => {
   return (
     <Navbar
       className={`bg-transparent absolute`}
-      onMenuOpenChange={setIsMenuOpen}
-      isMenuOpen={isMenuOpen}
       maxWidth="xl"
       isBlurred={false}
     >
@@ -57,10 +55,11 @@ const NavBar = () => {
           </Link>
         </NavbarBrand>
       </NavbarContent>
-      <NavbarContent className="hidden xl:flex gap-4" justify="end">
+      <NavbarContent className="hidden xl:flex gap-4" justify="center">
         {options.map(
           (item, index) =>
-            (data && data[item as keyof typeof data]) && (
+            data &&
+            data[item as keyof typeof data] && (
               <NavbarItem key={`${index}-${item}-navbar-item`}>
                 <Link
                   onClick={() => setSectionSelected(item)}
@@ -74,6 +73,11 @@ const NavBar = () => {
               </NavbarItem>
             )
         )}
+      </NavbarContent>
+      <NavbarContent justify="end">
+        <NavbarItem className="hidden md:flex w-1/2 xl:w-3/5">
+          <SelectorLanguage />
+        </NavbarItem>
       </NavbarContent>
     </Navbar>
   );
