@@ -22,6 +22,7 @@ export const CardItemEducation = ({
 }) => {
   const translations = useTranslations("education");
   const { isOpen, onOpen, onOpenChange } = useDisclosure();
+  const labelButton = `${education.achievements && translations("achievements")}${education.achievements && education.attitudes ? " - " : " "}${education.attitudes && translations("attitudes")}`;
   return (
     <Card
       shadow="sm"
@@ -105,12 +106,11 @@ export const CardItemEducation = ({
                 className="rounded-2xl text-white text-md border-white hover:border-cyan-400 hover:bg-cyan-400 hover:text-black"
                 onClick={onOpen}
               >
-                {education.achievements && translations("achievements")}
-                {education.achievements && education.attitudes ? " y " : " "}
-                {education.attitudes && translations("attitudes")}
+                {labelButton}
               </Button>
 
               <ModalAchievementsAttitudes
+                title={labelButton}
                 isOpen={isOpen}
                 onOpenChange={onOpenChange}
                 achievements={education.achievements}
