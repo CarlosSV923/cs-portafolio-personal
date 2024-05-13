@@ -11,11 +11,15 @@ const InterestSection = () => {
   return (
     <div
       id="interests"
-      className="bg-zinc-800 h-full flex flex-col items-center justify-center p-8 xl:p-12 gap-8 xl:gap-16"
+      className="bg-[#E8E8E8] dark:bg-zinc-800 h-full flex flex-col items-center justify-center p-8 xl:p-12 gap-8 xl:gap-16"
     >
       <TitleSection
         title={translations("title")}
-        classNames={{ divider: "w-16 xl:w-24", base: "justify-center" }}
+        classNames={{
+          divider: "bg-[#CC5500] dark:bg-cyan-400 w-16 xl:w-24",
+          base: "justify-center",
+          text: "text-[#333333] dark:text-white",
+        }}
       />
 
       <div className="w-full flex justify-center flex-row flex-wrap gap-8 xl:gap-16">

@@ -12,11 +12,11 @@ const ContactSection = () => {
   return (
     <div
       id="contact"
-      className="bg-gray-800 h-full flex flex-col items-center justify-center p-8 xl:p-12 gap-8 xl:gap-16"
+      className="bg-[#F7F7F7] dark:bg-gray-800 h-full flex flex-col items-center justify-center p-8 xl:p-12 gap-8 xl:gap-16"
     >
       <TitleSection
         title={translations("title")}
-        classNames={{ divider: "w-16 xl:w-24", base: "justify-center" }}
+        classNames={{ divider: "bg-[#CC5500] dark:bg-cyan-400 w-16 xl:w-24", base: "justify-center", text: "text-[#333333] dark:text-white" }}
       />
       <div className="w-full flex justify-center flex-row flex-wrap gap-8 xl:gap-12">
         {data?.contact.linkedin && (
@@ -26,7 +26,7 @@ const ContactSection = () => {
             label={translations("linkedin")}
             action={() => window.open(data?.contact.linkedin, "_blank")}
             actionText={translations("actionTextLinkedin")}
-            classNameFrontCard="bg-cyan-400"
+            classNameFrontCard="bg-[#CC5500] dark:bg-cyan-400"
           />
         )}
         {data?.contact.github && (
@@ -36,7 +36,7 @@ const ContactSection = () => {
             label={translations("github")}
             action={() => window.open(data?.contact.github, "_blank")}
             actionText={translations("actionTextGithub")}
-            classNameFrontCard="bg-cyan-400"
+            classNameFrontCard="bg-[#CC5500] dark:bg-cyan-400"
           />
         )}
         {data?.contact.email && (
@@ -46,7 +46,7 @@ const ContactSection = () => {
             label={translations("email")}
             action={() => window.open(`mailto:${data?.contact.email}`)}
             actionText={translations("actionTextEmail")}
-            classNameFrontCard="bg-cyan-400"
+            classNameFrontCard="bg-[#CC5500] dark:bg-cyan-400"
           />
         )}
         {data?.contact.phone && (
@@ -58,7 +58,7 @@ const ContactSection = () => {
               window.open(`https://wa.me/${data?.contact.phone}`, "_blank")
             }
             actionText={translations("actionTextPhone")}
-            classNameFrontCard="bg-cyan-400"
+            classNameFrontCard="bg-[#CC5500] dark:bg-cyan-400"
           />
         )}
         {data?.contact.address && (
@@ -66,7 +66,7 @@ const ContactSection = () => {
             icon={IconsDefault.ICON_ADDRESS_WHITE}
             conatactValue={data?.contact.address}
             label={translations("address")}
-            classNameFrontCard="bg-cyan-400"
+            classNameFrontCard="bg-[#CC5500] dark:bg-cyan-400"
           />
         )}
       </div>

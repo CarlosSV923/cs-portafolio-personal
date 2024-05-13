@@ -60,7 +60,7 @@ export const CardItemContact = ({
         </div>
 
         <div
-          className={`absolute w-full h-full bg-cyan-400 rounded-lg p-4 contact-card-item-back ${
+          className={`absolute w-full h-full bg-[#CC5500] dark:bg-cyan-400 rounded-lg p-4 contact-card-item-back ${
             isFlipped ? "z-10" : ""
           }`}
         >
@@ -70,7 +70,7 @@ export const CardItemContact = ({
                 <Tooltip showArrow={true} content={actionText}>
                   <Button
                     onClick={action}
-                    className="w-1/2 bg-cyan-600 border-cyan-600"
+                    className="w-1/2 bg-[#A24400] dark:bg-cyan-600 border-[#A24400] dark:border-cyan-600"
                     isIconOnly
                   >
                     <Image
@@ -93,7 +93,7 @@ export const CardItemContact = ({
                 content={translations("copyToClipboard")}
               >
                 <Button
-                  className="w-1/2 bg-cyan-600 border-cyan-600"
+                  className="w-1/2 bg-[#A24400] dark:bg-cyan-600 border-[#A24400] dark:border-cyan-600"
                   onClick={() => navigator.clipboard.writeText(conatactValue)}
                   isIconOnly
                 >

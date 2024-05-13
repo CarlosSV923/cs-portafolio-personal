@@ -30,6 +30,8 @@ const SelectorLanguage = () => {
 
   return (
     <Select
+      value={language}
+      size="sm"
       aria-label="Language Selector"
       placeholder={translations("placeholder")}
       defaultSelectedKeys={[language]}
@@ -69,6 +71,7 @@ const SelectorLanguage = () => {
           }
           key={item.value}
           value={item.value}
+          textValue={item.value}
         >
           <p className="hidden md:flex">{item.name}</p>
         </SelectItem>

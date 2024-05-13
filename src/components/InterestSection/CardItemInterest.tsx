@@ -1,5 +1,6 @@
 "use client";
 import { Interest } from "@/models/data.model";
+import { useTheme } from "next-themes";
 import {
   Card,
   CardHeader,
@@ -14,22 +15,21 @@ import {
   ImagesDefault,
 } from "@/configuration/images.icons.default";
 import { useTranslations } from "next-intl";
+import { DARK_THEME } from "@/configuration/theme";
 
 export const CardItemInterest = ({ interest }: { interest: Interest }) => {
   const translations = useTranslations("interests");
+  const { theme } = useTheme();
   return (
     <Card
       shadow="sm"
       fullWidth
-      style={{
-        backgroundColor: "#1A1A2E",
-      }}
-      className="w-full md:w-5/12 xl:w-1/4 p-2 h-max"
+      className="bg-white dark:bg-[#1A1A2E] w-full md:w-5/12 xl:w-1/4 p-2 h-max"
     >
       <CardHeader className="flex flex-col item-center justify-center gap-2">
         <Image
           as={NextImage}
-          src={interest.logo || IconsDefault.ICON_INTEREST_CYAN}
+          src={interest.logo || (theme === DARK_THEME ? IconsDefault.ICON_INTEREST_CYAN : IconsDefault.ICON_INTEREST_ORANGE)}
           alt={interest.name}
           width={40}
           height={40}
@@ -38,14 +38,12 @@ export const CardItemInterest = ({ interest }: { interest: Interest }) => {
           radius="none"
         />
 
-        {/* <div className="flex flex-col w-full"> */}
         {interest.name && (
-          <h3 className="text-cyan-400 text-lg font-bold">{interest.name}</h3>
+          <h3 className="text-[#CC5500] dark:text-cyan-400 text-lg font-bold">{interest.name}</h3>
         )}
         {interest.description && (
-          <p className="text-white text-md">{interest.description}</p>
+          <p className="text-[#333333] dark:text-white text-md">{interest.description}</p>
         )}
-        {/* </div> */}
       </CardHeader>
       <CardBody className="flex flex-col justify-center item-center gap-4">
         <Image
@@ -61,7 +59,7 @@ export const CardItemInterest = ({ interest }: { interest: Interest }) => {
       {interest.url && (
         <CardFooter className="flex flex-col item-center justify-center gap-4">
           <Link
-            className="text-white text-md hover:text-cyan-400"
+            className="text-[#333333] dark:text-white text-md hover:text-[#CC5500] dark:hover:text-cyan-400"
             isExternal
             showAnchorIcon
             href={interest.url}

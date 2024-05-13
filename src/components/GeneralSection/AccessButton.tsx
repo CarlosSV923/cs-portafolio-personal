@@ -21,7 +21,7 @@ export const AccessButton = ({
     <Link
       target={target}
       href={href}
-      className="flex gap-1 justify-center items-center border border-cyan-400 rounded-lg p-1 xl:p-1.5"
+      className="flex gap-1 justify-center items-center border border-[#CC5500] dark:border-cyan-400 rounded-lg p-1 xl:p-1.5"
     >
       <Image
         as={NextImage}
@@ -32,7 +32,7 @@ export const AccessButton = ({
         loading="eager"
         radius="none"
       />
-      <p className="text-cyan-400 hidden xl:flex">{text}</p>
+      <p className="text-[#CC5500] dark:text-cyan-400 hidden xl:flex">{text}</p>
     </Link>
   );
 };

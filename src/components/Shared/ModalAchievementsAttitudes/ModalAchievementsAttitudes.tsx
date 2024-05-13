@@ -19,8 +19,8 @@ export const ModalAchievementsAttitudes = ({
   title,
   onOpenChange,
   achievements,
-  style,
-  className,
+  styles,
+  classNames,
   attitudes,
 }: {
   isOpen: boolean;
@@ -28,14 +28,23 @@ export const ModalAchievementsAttitudes = ({
   onOpenChange: (isOpen: boolean) => void;
   achievements?: string[] | string;
   attitudes?: TechAttitude[];
-  style?: CSSProperties;
-  className?: string;
-  
+  styles?: {
+    modal?: CSSProperties;
+    header?: CSSProperties;
+    body?: CSSProperties;
+    footer?: CSSProperties;
+  };
+  classNames?: {
+    modal?: string;
+    header?: string;
+    body?: string;
+    footer?: string;
+  };
 }) => {
   return (
     <Modal
-      style={style}
-      className={className}
+      style={styles?.modal}
+      className={classNames?.modal}
       isOpen={isOpen}
       onOpenChange={onOpenChange}
       size="lg"
@@ -44,7 +53,7 @@ export const ModalAchievementsAttitudes = ({
       <ModalContent>
         {(onClose) => (
           <>
-            <ModalHeader className="text-cyan-400 font-bold">
+            <ModalHeader className="text-[#CC5500] dark:text-cyan-400 font-bold">
               {title}
             </ModalHeader>
             <ModalBody className="flex flex-col gap-2">
@@ -57,7 +66,7 @@ export const ModalAchievementsAttitudes = ({
                 color="danger"
                 variant="light"
                 onPress={onClose}
-                className="text-white"
+                className="text-[#333333] dark:text-white"
               >
                 Cerrar
               </Button>

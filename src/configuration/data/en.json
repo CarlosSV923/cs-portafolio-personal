@@ -421,13 +421,13 @@
             "description": "I love to travel and discover new places, as well as capture those moments with my camera or cell phone.",
             "url": "https://www.instagram.com/d3v.il.923/",
             "image": "/images/personalized/interest_travel_photography.jpg",
-            "logo": "/icons/personalized/icon_tripod.png"
+            "logo": ""
         },
         {
             "name": "Pc Gaming",
             "description": "I like everything related to the gaming world, PC hardware, and technology in general.",
             "logo": "/icons/personalized/icon_game-console.png",
-            "image": "/images/personalized/interest_setup_gamer.jpg"
+            "image": ""
         }
     ]
 }

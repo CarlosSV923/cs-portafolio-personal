@@ -10,15 +10,16 @@ export const EducationSection = () => {
 
   return (
     <div
-      style={{
-        backgroundColor: "#1A1A2E",
-      }}
       id="education"
-      className="h-full flex flex-col items-center justify-center p-8 gap-8 xl:gap-16"
+      className="bg-[#E8E8E8] dark:bg-[#1A1A2E] h-full flex flex-col items-center justify-center p-8 gap-8 xl:gap-16"
     >
       <TitleSection
         title={translations("title")}
-        classNames={{ divider: "w-32", base: "justify-center" }}
+        classNames={{
+          divider: "bg-[#CC5500] dark:bg-cyan-400 w-32",
+          base: "justify-center",
+          text: "text-[#333333] dark:text-white",
+        }}
       />
 
       <div className="w-full flex justify-center flex-col xl:flex-row flex-wrap gap-8 xl:gap-16">
