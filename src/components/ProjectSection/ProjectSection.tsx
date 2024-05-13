@@ -11,15 +11,16 @@ const ProjectSection = () => {
 
   return (
     <div
-      style={{
-        backgroundColor: "#1A1A2E",
-      }}
       id="projects"
-      className="h-full flex flex-col items-center justify-center p-8 gap-8 xl:gap-16"
+      className="bg-white dark:bg-[#1A1A2E] h-full flex flex-col items-center justify-center p-8 gap-8 xl:gap-16"
     >
       <TitleSection
         title={translations("title")}
-        classNames={{ divider: "w-16 xl:w-24", base: "justify-center" }}
+        classNames={{
+          divider: "bg-[#CC5500] dark:bg-cyan-400 w-16 xl:w-24",
+          base: "justify-center",
+          text: "text-[#333333] dark:text-white",
+        }}
       />
 
       <div className="w-full flex justify-center flex-row flex-wrap gap-8 xl:gap-16">

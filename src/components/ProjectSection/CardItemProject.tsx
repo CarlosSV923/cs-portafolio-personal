@@ -19,7 +19,7 @@ export const CardItemProject = ({ project }: { project: Project }) => {
     <Card
       shadow="sm"
       fullWidth
-      className="w-full md:w-5/12 xl:w-1/4 p-2 h-max bg-gray-800"
+      className="w-full md:w-5/12 xl:w-1/4 p-2 h-max bg-[#E0E0E0] dark:bg-gray-800"
     >
       <CardHeader className="flex flex-col item-center justify-center gap-4">
         <Image
@@ -33,20 +33,20 @@ export const CardItemProject = ({ project }: { project: Project }) => {
         />
         <div className="flex flex-col w-full">
           {project.name && (
-            <h3 className="text-cyan-400 text-lg font-bold">{project.name}</h3>
+            <h3 className="text-[#CC5500] dark:text-cyan-400 text-lg font-bold">{project.name}</h3>
           )}
           {project.owner && project.typeOwner && (
-            <p className="text-white text-md">
+            <p className="text-[#333333] dark:text-white text-md">
               {translations("projectOwner")}: {project.owner}{" "}
               {`(${project.typeOwner})`}
             </p>
           )}
-          {project.type && <p className="text-white text-md">{project.type}</p>}
+          {project.type && <p className="text-[#333333] dark:text-white text-md">{project.type}</p>}
         </div>
       </CardHeader>
       <CardBody className="flex flex-col justify-center item-center gap-4">
         {project.description && (
-          <p className="text-white text-md">{project.description}</p>
+          <p className="text-[#333333] dark:text-white text-md">{project.description}</p>
         )}
         {Boolean(project.technologies?.length) && (
           <TechAttitudeList attitudes={project.technologies!} limit={5} />

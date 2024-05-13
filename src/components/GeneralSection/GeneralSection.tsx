@@ -1,14 +1,17 @@
 "use client";
 import { useConfig } from "@/contexts/portafolio.context";
 import { Avatar, Image } from "@nextui-org/react";
+import { useTheme } from "next-themes";
 import NextImage from "next/image";
 import { useEffect, useState } from "react";
 import { AccessButton } from "./AccessButton";
 import { IconsDefault } from "@/configuration/images.icons.default";
 import { useTranslations } from "next-intl";
-import SelectorLanguage from "../SelectorLanguage/SelectorLanguage";
+import SelectorLanguage from "../Shared/SelectorLanguage/SelectorLanguage";
+import { DARK_THEME } from "@/configuration/theme";
 
 const GeneralSection = () => {
+  const { theme } = useTheme();
   const { data } = useConfig()!;
   const translations = useTranslations("contact");
 
@@ -62,7 +65,7 @@ const GeneralSection = () => {
             className="h-20 w-20 sm:h-32 sm:w-32 md:h-40 md:w-40 lg:h-52 lg:w-52 xl:h-64 xl:w-64"
           />
           <div className="flex flex-col gap-2 sm:gap-3 md:gap-4 lg:gap-5 xl:gap-6">
-            <h1 className="text-lg sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl text-cyan-400 font-bold text-center">
+            <h1 className="text-lg sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl text-[#CC5500] dark:text-cyan-400 font-bold text-center">
               {data?.general?.firstName} {data?.general?.firstLastName}
             </h1>
             <p className="text-sm sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl text-center">
@@ -81,7 +84,7 @@ const GeneralSection = () => {
               target="_blank"
               height={23}
               href={data?.contact?.github}
-              srcImg={IconsDefault.ICON_GITHUB_CYAN}
+              srcImg={theme=== DARK_THEME ? IconsDefault.ICON_GITHUB_CYAN : IconsDefault.ICON_GITHUB_ORANGE}
               text={translations("github")}
               width={23}
             />
@@ -91,7 +94,7 @@ const GeneralSection = () => {
               target="_blank"
               height={23}
               href={data?.contact?.linkedin}
-              srcImg={IconsDefault.ICON_LINKEDIN_CYAN}
+              srcImg={theme=== DARK_THEME ? IconsDefault.ICON_LINKEDIN_CYAN : IconsDefault.ICON_LINKENIN_ORANGE}
               text={translations("linkedin")}
               width={23}
             />

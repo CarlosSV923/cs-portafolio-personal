@@ -9,7 +9,7 @@ export const AchievementList = ({
         {achievements.map((achievement, index) => (
           <li
             key={`${achievement.length}-achievement-${index}`}
-            className="text-white text-md"
+            className="text-[#333333] dark:text-white text-md"
           >
             {achievement}
           </li>
@@ -18,5 +18,5 @@ export const AchievementList = ({
     );
   }
 
-  return <p className="text-white text-justify text-md">{achievements}</p>;
+  return <p className="text-[#333333] dark:text-white text-justify text-md">{achievements}</p>;
 };

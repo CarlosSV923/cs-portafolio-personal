@@ -6,6 +6,15 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 
 # [Released]##
 
+## [1.1.0] - 2024-05-03
+- Add: Se implementan internacionalizacion
+- Add: Se implementan boton de cambio de idioma
+- Add: Se implementa loading page
+- Add: Se implementa not found page
+- Add: Se implementa Uso de json para datos
+
+
+
 ## [1.0.1] - 2024-04-20
 - Fix: Se arreglaron rutas para archivos, imagenes e iconos
 - Add: Se agregaron nuevas traducciones y validaciones para modulo de contacto
