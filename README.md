@@ -19,19 +19,13 @@ Antes de comenzar, asegúrate de tener instalados los siguientes programas:
 
 Sigue estos pasos para configurar y ejecutar el proyecto localmente.
 
-1. **Clona el repositorio:**
-
-```bash
-git clone https://github.com/tu-usuario/portafolio-personal.git
-```
-
-2. **Instala las dependencias**
+1. **Instala las dependencias**
 
 ```bash
 npm install
 ```
 
-3. **Ejecución**
+2. **Ejecución**
 
 ```bash
 npm run dev
